@@ -1,0 +1,2084 @@
+<html><!-- Powered by Question2Answer - http://www.question2answer.org/ --><head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>[CSS] Домашно Dynamic styles with SASS - 1 задача - Telerik Academy Forums</title>
+		<meta name="description" content="Условие:  Implement the following using SASS ­Use the HTML code from homework.html ­Create  ... microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a )">
+		<meta name="keywords" content="Уеб дизайн с HTML5, CSS и JavaScript,css,домашно,sass,1,задача">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="canonical" href="http://forums.academy.telerik.com/56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+		<link rel="next" href="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0?start=10#a_list_title">
+		<script type="text/javascript"><!--
+		var qa_root='..\/';
+		var qa_request='56133\/css-домашно-dynamic-styles-with-sass-1-задача';
+		qa_wysiwyg_editor_config={toolbar:[['Bold','Italic','Underline','Strike'],['Font','FontSize'],['TextColor','BGColor'],['Link','Unlink'],'/',['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar'],['RemoveFormat', 'Maximize']], defaultLanguage:'', skin:'v2', toolbarCanCollapse:false, removePlugins:'elementspath', resize_enabled:false, autogrow:false, entities:false, filebrowserImageUploadUrl:'..\/wysiwyg-editor-upload?qa_only_image=1', filebrowserUploadUrl:'..\/wysiwyg-editor-upload'}
+		var qa_oldonload=window.onload;
+		window.onload=function() {
+			if (typeof qa_oldonload=='function')
+				qa_oldonload();
+			
+			document.getElementById('anew').qa_load=function() { qa_ckeditor_a_content=CKEDITOR.replace('a_content', window.qa_wysiwyg_editor_config); }
+			document.getElementById('anew').qa_focus=function() { qa_ckeditor_a_content.focus(); }
+			
+			document.getElementById('c56467').qa_focus=function() { document.getElementById('c56467_content').focus(); }
+			
+			document.getElementById('c57595').qa_focus=function() { document.getElementById('c57595_content').focus(); }
+			
+			document.getElementById('c59100').qa_focus=function() { document.getElementById('c59100_content').focus(); }
+			
+			document.getElementById('c59503').qa_focus=function() { document.getElementById('c59503_content').focus(); }
+			
+			document.getElementById('c59768').qa_focus=function() { document.getElementById('c59768_content').focus(); }
+			
+			document.getElementById('c60043').qa_focus=function() { document.getElementById('c60043_content').focus(); }
+			
+			document.getElementById('c60059').qa_focus=function() { document.getElementById('c60059_content').focus(); }
+			
+			document.getElementById('c60079').qa_focus=function() { document.getElementById('c60079_content').focus(); }
+			
+			document.getElementById('c61550').qa_focus=function() { document.getElementById('c61550_content').focus(); }
+			
+			document.getElementById('c62076').qa_focus=function() { document.getElementById('c62076_content').focus(); }
+		}
+		//--></script>
+		<script src="../qa-content/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="../qa-content/qa-page.js?1.5" type="text/javascript"></script>
+		<script src="../qa-content/qa-question.js?1.5" type="text/javascript"></script>
+		<script src="../qa-plugin/wysiwyg-editor/ckeditor.js?1.5" type="text/javascript"></script>
+	</head>
+	<body class="qa-template-question qa-category-3 qa-body-js-on">
+		<script type="text/javascript"><!--
+			var b=document.getElementsByTagName('body')[0];
+			b.className=b.className.replace('qa-body-js-off', 'qa-body-js-on');
+		//--></script>
+		<div class="qa-body-wrapper">
+			
+			<div class="qa-header">
+				<div class="qa-logo">
+					<a href="index.html" class="qa-logo-link">Telerik Academy Forums</a>
+				</div>
+				<div class="qa-nav-user">
+					<div class="qa-logged-in">
+						<span class="qa-logged-in-pad">Hello </span><span class="qa-logged-in-data"><a href="user-profile.html" class="qa-user-link">forumTest</a></span>
+					</div>
+					<ul class="qa-nav-user-list">
+						<li class="qa-nav-user-item qa-nav-user-account">
+							<a href="my-account.html" class="qa-nav-user-link">My Account</a>
+						</li>
+						<li class="qa-nav-user-item qa-nav-user-updates">
+							<a href="#" class="qa-nav-user-link">My Updates</a>
+						</li>
+						<li class="qa-nav-user-item qa-nav-user-logout">
+							<a href="#" class="qa-nav-user-link">Logout</a>
+						</li>
+					</ul>
+					<div class="qa-nav-user-clear">
+					</div>
+				</div>
+				<div class="qa-search">
+					<form method="GET" action="../search">
+						
+						<input name="q" value="" class="qa-search-field">
+						<input type="submit" value="Search" class="qa-search-button">
+					</form>
+				</div>
+				<div class="qa-nav-main">
+					<ul class="qa-nav-main-list">
+						<li class="qa-nav-main-item qa-nav-main-custom-10">
+							<a href="index.html" class="qa-nav-main-link">Open</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-questions">
+							<a href="questions.html" class="qa-nav-main-link">Questions</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-tag">
+							<a href="tags.html" class="qa-nav-main-link">Tags</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-categories">
+							<a href="categories.html" class="qa-nav-main-link">Categories</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-user">
+							<a href="users.html" class="qa-nav-main-link">Users</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-ask">
+							<a href="ask.html" class="qa-nav-main-link">Ask a Question</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-custom-11">
+							<a href="rules.html" class="qa-nav-main-link">Rules</a>
+						</li>
+						<li class="qa-nav-main-item-opp qa-nav-main-custom-1">
+							<a href="http://academy.telerik.com" class="qa-nav-main-link">Telerik Academy</a>
+						</li>
+					</ul>
+					<div class="qa-nav-main-clear">
+					</div>
+				</div>
+				<div class="qa-header-clear">
+				</div>
+			</div> <!-- END qa-header -->
+			
+			<div class="qa-sidepanel">
+				<div class="qa-widgets-side qa-widgets-side-top">
+					<div class="qa-widget-side qa-widget-side-top">
+						<div class="qa-related-qs">
+							<h2 style="margin-top:0; padding-top:0;">
+								Related questions
+							</h2>
+							<ul class="qa-related-q-list">
+								<li class="qa-related-q-item"><a href="../57594/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-2-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">[CSS] Домашно Dynamic styles with SASS - 2 задача</a></li>
+								<li class="qa-related-q-item"><a href="../54209/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-css-layout-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">[CSS] Домашно CSS Layout - 1 задача</a></li>
+								<li class="qa-related-q-item"><a href="../50945/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-css-presentation-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">[CSS] Домашно CSS Presentation - 1 задача</a></li>
+								<li class="qa-related-q-item"><a href="../41739/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-css-overview-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D1%81%D0%B5%D0%B7%D0%BE%D0%BD-2012-2013">[CSS] Домашно CSS Overview - 1 задача - сезон 2012/2013</a></li>
+								<li class="qa-related-q-item"><a href="../39723/js-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-jquery-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">[JS] Домашно - jQuery - 1 задача</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="qa-nav-cat">
+					<ul class="qa-nav-cat-list qa-nav-cat-list-1">
+						<li class="qa-nav-cat-item qa-nav-cat-all">
+							<a href="../" class="qa-nav-cat-link">All categories</a>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-uncategorized">
+							<a href="../uncategorized" class="qa-nav-cat-link" title="Общи приказки - всякакви теми, които не са свързани с курсовете в академията за софтуерни инженери на Телерик">Общи приказки</a>
+							<span class="qa-nav-cat-note">(799)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-faq">
+							<a href="../faq" class="qa-nav-cat-link" title="Често задавани въпроси">FAQ</a>
+							<span class="qa-nav-cat-note">(19)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-important-announcements">
+							<a href="../important-announcements" class="qa-nav-cat-link" title="Важни съобщения">Важни съобщения</a>
+							<span class="qa-nav-cat-note">(8)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-web-design-with-html5-css-and-javascript">
+							<a href="../web-design-with-html5-css-and-javascript" class="qa-nav-cat-link qa-nav-cat-selected" title="Официален форум а безплатния курс &quot;Уеб дизайн с HTML 5, CSS 3 и JavaScript&quot; (Web Design with HTML 5, CSS 3 and JavaScript course)">Уеб дизайн с HTML5, CSS и JavaScript</a>
+							<span class="qa-nav-cat-note">(1,402)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-telerik-software-academy">
+							<a href="../telerik-software-academy" class="qa-nav-cat-link" title="Форум на академията на Телерик по разработка на софтуер - за общи въпроси относно академията - Telerik Software Academy">Софтуерна академия на Телерик</a>
+							<span class="qa-nav-cat-note">(552)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-csharp-fundamentals">
+							<a href="../csharp-fundamentals" class="qa-nav-cat-link" title="Форум на курса &quot;C# Fundamentals&quot; от софтуерната академия на Телерик">C# Fundamentals</a>
+							<span class="qa-nav-cat-note">(1,057)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-external-courses">
+							<a href="../external-courses" class="qa-nav-cat-link" title="Външни курсове">Външни курсове</a>
+							<span class="qa-nav-cat-note">(118)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-software-engineering-basics">
+							<a href="../software-engineering-basics" class="qa-nav-cat-link" title="Курс &quot;Основи на софтуерното инженерство&quot;">Software Engineering Basics</a>
+							<span class="qa-nav-cat-note">(114)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-algo-academy">
+							<a href="../algo-academy" class="qa-nav-cat-link" title="Академията на Телерик за алгоритми и подготовка на състезателите по информатика за ученическите и студентските състезания в България и чужбина.">Algo Academy</a>
+							<span class="qa-nav-cat-note">(12)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-book-programming-algorithms">
+							<a href="../book-programming-algorithms" class="qa-nav-cat-link" title="Официален форум на книгата &quot;Програмиране =++ Алгоритми;&quot; на Преслав Наков и Панайот Добриков (http://www.programirane.org).">Книга "Програмиране =++ Алгоритми;"</a>
+							<span class="qa-nav-cat-note">(2)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-software-development-in-the-cloud">
+							<a href="../software-development-in-the-cloud" class="qa-nav-cat-link" title="Официален форум на курса &quot;Разработка на софтуер в cloud среда&quot; (Software Development in the Cloud)">Разработка на софтуер в cloud среда</a>
+							<span class="qa-nav-cat-note">(120)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-high-quality-code">
+							<a href="../high-quality-code" class="qa-nav-cat-link" title="Официална дискусионна група на курса &quot;Качествен програмен код&quot; (High-Quality Programming Code)">Качествен програмен код</a>
+							<span class="qa-nav-cat-note">(73)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-kids-academy-programirane-za-deca">
+							<a href="../kids-academy-programirane-za-deca" class="qa-nav-cat-link" title="Официален дискусионен форум на детската академия по програмиране за деца (Telerik Kids Academy)">Kids Academy - програмиране за деца</a>
+							<span class="qa-nav-cat-note">(153)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-telerik-school-academy">
+							<a href="../telerik-school-academy" class="qa-nav-cat-link" title="Училищна академия по разработка на софтуер (Telerik School Academy)">Училищна софтуерна академия</a>
+							<span class="qa-nav-cat-note">(85)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-pc-magazine-and-telerik-contest">
+							<a href="../pc-magazine-and-telerik-contest" class="qa-nav-cat-link" title="Официален дискусионен форум на конкурса по програмиране на PC Magazine и Telerik (http://www.pcmagbg.net/konkurs)">Конкурс по програмиране на PC Magazine и Telerik</a>
+							<span class="qa-nav-cat-note">(24)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-qa-academy">
+							<a href="../qa-academy" class="qa-nav-cat-link" title="Академия за QA инженери - безплатни обучения по осигуряване на качеството на софтуера и автоматизирано тестване - част от програмата на софтуерната академия на Телерик">QA академия</a>
+							<span class="qa-nav-cat-note">(57)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-mobile-development">
+							<a href="../mobile-development" class="qa-nav-cat-link" title="Официален дискусионен форум на курса &quot;Разработка на мобилни приложения&quot; (Mobile Applications Development)">Разработка на мобилни приложения</a>
+							<span class="qa-nav-cat-note">(53)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-asp-net">
+							<a href="../asp-net" class="qa-nav-cat-link" title="Официален форум на курсовете по ASP.NET MVC и ASP.NET Web Forms">ASP.NET MVC &amp; Web Forms</a>
+							<span class="qa-nav-cat-note">(53)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-seo-course">
+							<a href="../seo-course" class="qa-nav-cat-link" title="Официален дискусионен форум на безплатния SEO курс от софтуерната академия на Телерик (free SEO course).">SEO курс</a>
+							<span class="qa-nav-cat-note">(21)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-php-programming">
+							<a href="../php-programming" class="qa-nav-cat-link" title="Въпроси свързани с програмирането на PHP">PHP програмиране</a>
+							<span class="qa-nav-cat-note">(24)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-knowledge-sharing-and-team-working">
+							<a href="../knowledge-sharing-and-team-working" class="qa-nav-cat-link" title="Форум на курса &quot;Споделяне на знания и работа в екип&quot; - http://academy.telerik.com/student-courses/soft-skills-and-business-skills/teamwork">Споделяне на знания и работа в екип</a>
+							<span class="qa-nav-cat-note">(31)</span>
+						</li>
+						<li class="qa-nav-cat-item qa-nav-cat-events">
+							<a href="../events" class="qa-nav-cat-link" title="Технологични събития, семинари, конференции, обучения и подобни">Събития</a>
+							<span class="qa-nav-cat-note">(56)</span>
+						</li>
+					</ul>
+					<div class="qa-nav-cat-clear">
+					</div>
+				</div>
+				<div class="qa-widgets-side qa-widgets-side-low">
+					<div class="qa-widget-side qa-widget-side-low">
+						<div class="qa-nav-cat-list qa-nav-cat-link" style="margin:0;">
+							Popular Tags
+						</div>
+						<div style="font-size:10px;">
+							<a href="../tag/-" style="font-size:10.7px; vertical-align:baseline;">-</a>
+							<a href="../tag/academy" style="font-size:11.7px; vertical-align:baseline;">academy</a>
+							<a href="../tag/algorithms" style="font-size:6.8px; vertical-align:baseline;">algorithms</a>
+							<a href="../tag/and" style="font-size:10.7px; vertical-align:baseline;">and</a>
+							<a href="../tag/arrays" style="font-size:9.6px; vertical-align:baseline;">arrays</a>
+							<a href="../tag/asp" style="font-size:10.9px; vertical-align:baseline;">asp</a>
+							<a href="../tag/bgcoder" style="font-size:12.9px; vertical-align:baseline;">bgcoder</a>
+							<a href="../tag/c" style="font-size:9.3px; vertical-align:baseline;">c</a>
+							<a href="../tag/c%23" style="font-size:24.0px; vertical-align:baseline;">c#</a>
+							<a href="../tag/c%23-fundamentals" style="font-size:15.6px; vertical-align:baseline;">c#-fundamentals</a>
+							<a href="../tag/c%23-%D0%BA%D1%83%D1%80%D1%81" style="font-size:17.4px; vertical-align:baseline;">c#-курс</a>
+							<a href="../tag/cloud" style="font-size:12.2px; vertical-align:baseline;">cloud</a>
+							<a href="../tag/cloud-course" style="font-size:9.4px; vertical-align:baseline;">cloud-course</a>
+							<a href="../tag/cms" style="font-size:7.4px; vertical-align:baseline;">cms</a>
+							<a href="../tag/code" style="font-size:7.4px; vertical-align:baseline;">code</a>
+							<a href="../tag/console" style="font-size:9.1px; vertical-align:baseline;">console</a>
+							<a href="../tag/course" style="font-size:8.0px; vertical-align:baseline;">course</a>
+							<a href="../tag/csharp" style="font-size:6.3px; vertical-align:baseline;">csharp</a>
+							<a href="../tag/css" style="font-size:19.3px; vertical-align:baseline;">css</a>
+							<a href="../tag/css3" style="font-size:13.4px; vertical-align:baseline;">css3</a>
+							<a href="../tag/data" style="font-size:6.3px; vertical-align:baseline;">data</a>
+							<a href="../tag/database" style="font-size:7.4px; vertical-align:baseline;">database</a>
+							<a href="../tag/design" style="font-size:8.5px; vertical-align:baseline;">design</a>
+							<a href="../tag/development" style="font-size:7.4px; vertical-align:baseline;">development</a>
+							<a href="../tag/exam" style="font-size:13.3px; vertical-align:baseline;">exam</a>
+							<a href="../tag/expressions" style="font-size:9.5px; vertical-align:baseline;">expressions</a>
+							<a href="../tag/front-end-course" style="font-size:6.8px; vertical-align:baseline;">front-end-course</a>
+							<a href="../tag/fundamentals" style="font-size:6.8px; vertical-align:baseline;">fundamentals</a>
+							<a href="../tag/google" style="font-size:8.4px; vertical-align:baseline;">google</a>
+							<a href="../tag/help" style="font-size:9.4px; vertical-align:baseline;">help</a>
+							<a href="../tag/high-quality-code" style="font-size:6.3px; vertical-align:baseline;">high-quality-code</a>
+							<a href="../tag/homework" style="font-size:15.0px; vertical-align:baseline;">homework</a>
+							<a href="../tag/homeworks" style="font-size:7.4px; vertical-align:baseline;">homeworks</a>
+							<a href="../tag/html" style="font-size:21.2px; vertical-align:baseline;">html</a>
+							<a href="../tag/html-basics-course" style="font-size:10.4px; vertical-align:baseline;">html-basics-course</a>
+							<a href="../tag/html5" style="font-size:18.4px; vertical-align:baseline;">html5</a>
+							<a href="../tag/input" style="font-size:6.8px; vertical-align:baseline;">input</a>
+							<a href="../tag/java" style="font-size:6.8px; vertical-align:baseline;">java</a>
+							<a href="../tag/javascript" style="font-size:17.3px; vertical-align:baseline;">javascript</a>
+							<a href="../tag/jquery" style="font-size:7.6px; vertical-align:baseline;">jquery</a>
+							<a href="../tag/js" style="font-size:12.5px; vertical-align:baseline;">js</a>
+							<a href="../tag/loops" style="font-size:8.0px; vertical-align:baseline;">loops</a>
+							<a href="../tag/methods" style="font-size:7.0px; vertical-align:baseline;">methods</a>
+							<a href="../tag/microsoft" style="font-size:9.6px; vertical-align:baseline;">microsoft</a>
+							<a href="../tag/mobile" style="font-size:8.0px; vertical-align:baseline;">mobile</a>
+							<a href="../tag/mvc" style="font-size:8.7px; vertical-align:baseline;">mvc</a>
+							<a href="../tag/net" style="font-size:12.3px; vertical-align:baseline;">net</a>
+							<a href="../tag/online" style="font-size:6.3px; vertical-align:baseline;">online</a>
+							<a href="../tag/operators" style="font-size:10.3px; vertical-align:baseline;">operators</a>
+							<a href="../tag/output" style="font-size:6.3px; vertical-align:baseline;">output</a>
+							<a href="../tag/photoshop" style="font-size:14.6px; vertical-align:baseline;">photoshop</a>
+							<a href="../tag/php" style="font-size:10.3px; vertical-align:baseline;">php</a>
+							<a href="../tag/problem" style="font-size:14.0px; vertical-align:baseline;">problem</a>
+							<a href="../tag/processing" style="font-size:7.8px; vertical-align:baseline;">processing</a>
+							<a href="../tag/qa" style="font-size:10.4px; vertical-align:baseline;">qa</a>
+							<a href="../tag/question" style="font-size:8.0px; vertical-align:baseline;">question</a>
+							<a href="../tag/sass" style="font-size:6.3px; vertical-align:baseline;">sass</a>
+							<a href="../tag/seb" style="font-size:8.5px; vertical-align:baseline;">seb</a>
+							<a href="../tag/seo" style="font-size:7.2px; vertical-align:baseline;">seo</a>
+							<a href="../tag/server" style="font-size:7.0px; vertical-align:baseline;">server</a>
+							<a href="../tag/software" style="font-size:7.8px; vertical-align:baseline;">software</a>
+							<a href="../tag/sql" style="font-size:9.9px; vertical-align:baseline;">sql</a>
+							<a href="../tag/statements" style="font-size:6.5px; vertical-align:baseline;">statements</a>
+							<a href="../tag/strings" style="font-size:8.0px; vertical-align:baseline;">strings</a>
+							<a href="../tag/studio" style="font-size:14.0px; vertical-align:baseline;">studio</a>
+							<a href="../tag/tables-frames-forms" style="font-size:8.4px; vertical-align:baseline;">tables-frames-forms</a>
+							<a href="../tag/tags" style="font-size:6.8px; vertical-align:baseline;">tags</a>
+							<a href="../tag/telerik" style="font-size:12.4px; vertical-align:baseline;">telerik</a>
+							<a href="../tag/telerik-academy" style="font-size:15.8px; vertical-align:baseline;">telerik-academy</a>
+							<a href="../tag/test" style="font-size:11.8px; vertical-align:baseline;">test</a>
+							<a href="../tag/text" style="font-size:8.4px; vertical-align:baseline;">text</a>
+							<a href="../tag/video" style="font-size:8.8px; vertical-align:baseline;">video</a>
+							<a href="../tag/visual" style="font-size:14.1px; vertical-align:baseline;">visual</a>
+							<a href="../tag/visual-studio" style="font-size:7.0px; vertical-align:baseline;">visual-studio</a>
+							<a href="../tag/web" style="font-size:13.8px; vertical-align:baseline;">web</a>
+							<a href="../tag/web-design-tools" style="font-size:7.0px; vertical-align:baseline;">web-design-tools</a>
+							<a href="../tag/windows" style="font-size:10.3px; vertical-align:baseline;">windows</a>
+							<a href="../tag/windows-8" style="font-size:7.6px; vertical-align:baseline;">windows-8</a>
+							<a href="../tag/wordpress" style="font-size:13.5px; vertical-align:baseline;">wordpress</a>
+							<a href="../tag/%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F" style="font-size:13.7px; vertical-align:baseline;">академия</a>
+							<a href="../tag/%D0%B1%D0%BB%D0%BE%D0%B3" style="font-size:8.2px; vertical-align:baseline;">блог</a>
+							<a href="../tag/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE" style="font-size:14.4px; vertical-align:baseline;">видео</a>
+							<a href="../tag/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%83%D1%80%D0%BE%D1%86%D0%B8" style="font-size:8.8px; vertical-align:baseline;">видео-уроци</a>
+							<a href="../tag/%D0%B2%D1%8A%D0%BF%D1%80%D0%BE%D1%81" style="font-size:11.7px; vertical-align:baseline;">въпрос</a>
+							<a href="../tag/%D0%B2%D1%8A%D0%BF%D1%80%D0%BE%D1%81%D0%B8" style="font-size:8.7px; vertical-align:baseline;">въпроси</a>
+							<a href="../tag/%D0%B3%D1%80%D0%B5%D1%88%D0%BA%D0%B0" style="font-size:6.5px; vertical-align:baseline;">грешка</a>
+							<a href="../tag/%D0%B3%D1%80%D1%83%D0%BF%D0%B8" style="font-size:7.8px; vertical-align:baseline;">групи</a>
+							<a href="../tag/%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8" style="font-size:7.2px; vertical-align:baseline;">данни</a>
+							<a href="../tag/%D0%B4%D0%B0%D1%82%D0%B0" style="font-size:9.6px; vertical-align:baseline;">дата</a>
+							<a href="../tag/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8" style="font-size:20.4px; vertical-align:baseline;">домашни</a>
+							<a href="../tag/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE" style="font-size:21.3px; vertical-align:baseline;">домашно</a>
+							<a href="../tag/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE%D1%82%D0%BE" style="font-size:13.6px; vertical-align:baseline;">домашното</a>
+							<a href="../tag/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" style="font-size:20.2px; vertical-align:baseline;">задача</a>
+							<a href="../tag/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" style="font-size:14.9px; vertical-align:baseline;">задачи</a>
+							<a href="../tag/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE" style="font-size:16.7px; vertical-align:baseline;">задачи-домашно</a>
+							<a href="../tag/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B2%D0%B0%D0%BD%D0%B5" style="font-size:10.2px; vertical-align:baseline;">записване</a>
+							<a href="../tag/%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0" style="font-size:6.8px; vertical-align:baseline;">защита</a>
+							<a href="../tag/%D0%B8" style="font-size:6.5px; vertical-align:baseline;">и</a>
+							<a href="../tag/%D0%B8%D0%B7%D0%BF%D0%B8%D1%82" style="font-size:19.6px; vertical-align:baseline;">изпит</a>
+							<a href="../tag/%D0%B8%D0%B7%D0%BF%D0%B8%D1%82%D0%B8" style="font-size:12.0px; vertical-align:baseline;">изпити</a>
+							<a href="../tag/%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B5%D0%BD-%D0%BA%D0%BE%D0%B4" style="font-size:10.3px; vertical-align:baseline;">качествен-програмен-код</a>
+							<a href="../tag/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0" style="font-size:7.8px; vertical-align:baseline;">книга</a>
+							<a href="../tag/%D0%BA%D0%BE%D0%B4" style="font-size:7.8px; vertical-align:baseline;">код</a>
+							<a href="../tag/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81" style="font-size:7.0px; vertical-align:baseline;">конкурс</a>
+							<a href="../tag/%D0%BA%D1%83%D1%80%D1%81" style="font-size:20.2px; vertical-align:baseline;">курс</a>
+							<a href="../tag/%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2" style="font-size:6.0px; vertical-align:baseline;">курсов</a>
+							<a href="../tag/%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B5" style="font-size:10.2px; vertical-align:baseline;">курсове</a>
+							<a href="../tag/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" style="font-size:13.4px; vertical-align:baseline;">лекции</a>
+							<a href="../tag/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F" style="font-size:9.0px; vertical-align:baseline;">лекция</a>
+							<a href="../tag/%D0%BC%D0%B0%D1%81%D0%B8%D0%B2%D0%B8" style="font-size:8.4px; vertical-align:baseline;">масиви</a>
+							<a href="../tag/%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B8" style="font-size:9.9px; vertical-align:baseline;">материали</a>
+							<a href="../tag/%D0%BD%D0%B0" style="font-size:9.5px; vertical-align:baseline;">на</a>
+							<a href="../tag/%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" style="font-size:10.5px; vertical-align:baseline;">обучение</a>
+							<a href="../tag/%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD" style="font-size:12.3px; vertical-align:baseline;">онлайн</a>
+							<a href="../tag/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8" style="font-size:7.0px; vertical-align:baseline;">оператори</a>
+							<a href="../tag/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B8" style="font-size:10.0px; vertical-align:baseline;">основи</a>
+							<a href="../tag/%D0%BE%D1%86%D0%B5%D0%BD%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5" style="font-size:6.0px; vertical-align:baseline;">оценяване</a>
+							<a href="../tag/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0" style="font-size:8.4px; vertical-align:baseline;">подготовка</a>
+							<a href="../tag/%D0%BF%D0%BE%D0%BC%D0%BE%D1%89" style="font-size:7.4px; vertical-align:baseline;">помощ</a>
+							<a href="../tag/%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5" style="font-size:7.0px; vertical-align:baseline;">предложение</a>
+							<a href="../tag/%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F" style="font-size:8.0px; vertical-align:baseline;">презентация</a>
+							<a href="../tag/%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC" style="font-size:14.1px; vertical-align:baseline;">проблем</a>
+							<a href="../tag/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0" style="font-size:7.2px; vertical-align:baseline;">програма</a>
+							<a href="../tag/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" style="font-size:12.2px; vertical-align:baseline;">програмиране</a>
+							<a href="../tag/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82" style="font-size:10.5px; vertical-align:baseline;">проект</a>
+							<a href="../tag/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8" style="font-size:12.7px; vertical-align:baseline;">проекти</a>
+							<a href="../tag/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0" style="font-size:6.3px; vertical-align:baseline;">работа</a>
+							<a href="../tag/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F" style="font-size:8.8px; vertical-align:baseline;">регистрация</a>
+							<a href="../tag/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%82%D0%B0%D1%82%D0%B8" style="font-size:10.6px; vertical-align:baseline;">резултати</a>
+							<a href="../tag/%D1%81%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80" style="font-size:9.9px; vertical-align:baseline;">семинар</a>
+							<a href="../tag/%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82" style="font-size:6.5px; vertical-align:baseline;">сертификат</a>
+							<a href="../tag/%D1%81%D0%BE%D1%84%D1%82%D1%83%D0%B5%D1%80%D0%BD%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F" style="font-size:21.1px; vertical-align:baseline;">софтуерна-академия</a>
+							<a href="../tag/%D1%81%D1%80%D0%BE%D0%BA" style="font-size:11.8px; vertical-align:baseline;">срок</a>
+							<a href="../tag/%D1%81%D1%8A%D1%81%D1%82%D0%B5%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5" style="font-size:8.4px; vertical-align:baseline;">състезание</a>
+							<a href="../tag/%D1%82%D0%B5%D0%BB%D0%B5%D1%80%D0%B8%D0%BA" style="font-size:10.6px; vertical-align:baseline;">телерик</a>
+							<a href="../tag/%D1%82%D0%B5%D1%81%D1%82" style="font-size:15.6px; vertical-align:baseline;">тест</a>
+							<a href="../tag/%D1%83%D0%B5%D0%B1-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD" style="font-size:17.2px; vertical-align:baseline;">уеб-дизайн</a>
+							<a href="../tag/%D1%83%D1%80%D0%BE%D1%86%D0%B8" style="font-size:10.5px; vertical-align:baseline;">уроци</a>
+							<a href="../tag/%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8" style="font-size:6.0px; vertical-align:baseline;">условни</a>
+							<a href="../tag/%D1%84%D0%BE%D1%80%D1%83%D0%BC" style="font-size:12.3px; vertical-align:baseline;">форум</a>
+							<a href="../tag/1" style="font-size:9.5px; vertical-align:baseline;">1</a>
+							<a href="../tag/2" style="font-size:10.0px; vertical-align:baseline;">2</a>
+							<a href="../tag/3" style="font-size:8.8px; vertical-align:baseline;">3</a>
+							<a href="../tag/4" style="font-size:8.4px; vertical-align:baseline;">4</a>
+							<a href="../tag/5" style="font-size:8.7px; vertical-align:baseline;">5</a>
+							<a href="../tag/6" style="font-size:6.8px; vertical-align:baseline;">6</a>
+							<a href="../tag/7" style="font-size:8.0px; vertical-align:baseline;">7</a>
+							<a href="../tag/8" style="font-size:7.0px; vertical-align:baseline;">8</a>
+							<a href="../tag/2012" style="font-size:11.4px; vertical-align:baseline;">2012</a>
+							<a href="../tag/2013" style="font-size:6.5px; vertical-align:baseline;">2013</a>
+						</div>
+					</div>
+				</div>
+				
+				<a href="/">Форум на академията</a>
+			</div>
+			
+			<div class="qa-main">
+				<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+					<h1>
+						<div class="qa-favoriting" id="favoriting">
+							<input title="Add this question to my favorites" name="favorite_Q_56133_1" onclick="return qa_favorite_click(this);" type="submit" value="" class="qa-favorite-button" onmouseover="this.className='qa-favorite-hover';" onmouseout="this.className='qa-favorite-button';"> 
+						</div>
+						<span class="entry-title">[CSS] Домашно Dynamic styles with SASS - 1 задача</span>
+					</h1>
+				</form>
+				<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="q_page_form">
+					<input type="hidden" name="qa_click" value="">
+				</form>
+				<div class="qa-q-view hentry question" id="q56133">
+					<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+						<div class="qa-voting qa-voting-net" id="voting_56133">
+							<div class="qa-vote-buttons qa-vote-buttons-net">
+								<input title="Click to vote up" name="vote_56133_1_q56133" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+								<input title="Click to vote down" name="vote_56133_-1_q56133" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+							</div>
+							<div class="qa-vote-count qa-vote-count-net">
+								<span class="qa-netvote-count">
+									<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+								</span>
+							</div>
+							<div class="qa-vote-clear">
+							</div>
+						</div>
+						<div class="qa-q-view-main">
+							<div class="qa-q-view-content">
+								<a name="56133"></a><span class="entry-content"><p>
+	Условие:</p>
+<p>
+	Implement the following using SASS<br>
+	­Use the HTML code from homework.html<br>
+	­Create the SASS easy to change (backgrounds, fonts)<br>
+	­Use mixins for clears, gradients</p>
+<p>
+	(задача 2 от <span class="entry-title">CSS Presentation,</span> но с новия материал)</p>
+<p>
+	Здравейте колеги, тъй като материалите за лекцията по SASS се появиха реших да погледна задачите. Въпросът ми е : трябва ли да инсталираме допълнителна програма за да работим със SASS, понеже в презентацията е казано: Install PERL, или е достатъчно да изтеглим плъгин за Visual Studiо, като Mindscape Web Workbench ( Ето линк за сваляне: <a href="http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a" rel="nofollow">http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a</a> )</p>
+<p>
+	&nbsp;</p></span>
+										</div>
+										<div class="qa-q-view-tags">
+											<ul class="qa-q-view-tag-list">
+												<li class="qa-q-view-tag-item"><a href="../tag/css" rel="tag" class="qa-tag-link">css</a></li>
+												<li class="qa-q-view-tag-item"><a href="../tag/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE" rel="tag" class="qa-tag-link">домашно</a></li>
+												<li class="qa-q-view-tag-item"><a href="../tag/sass" rel="tag" class="qa-tag-link">sass</a></li>
+												<li class="qa-q-view-tag-item"><a href="../tag/1" rel="tag" class="qa-tag-link">1</a></li>
+												<li class="qa-q-view-tag-item"><a href="../tag/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" rel="tag" class="qa-tag-link">задача</a></li>
+											</ul>
+										</div>
+										<span class="qa-q-view-avatar">
+											<a href="../user/son4etyyy" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=8915481641757418718&amp;qa_size=50" width="29" height="50" class="qa-avatar-image"></a>
+										</span>
+										<span class="qa-q-view-meta">
+											<span class="qa-q-view-what">asked</span>
+											<span class="qa-q-view-when">
+												<span class="qa-q-view-when-data"><span class="published"><span class="value-title" title="2013-01-22T22:16:34+0000"></span>Jan 23</span></span>
+											</span>
+											<span class="qa-q-view-where">
+												<span class="qa-q-view-where-pad">in </span><span class="qa-q-view-where-data"><a href="../web-design-with-html5-css-and-javascript" class="qa-category-link">Уеб дизайн с HTML5, CSS и JavaScript</a></span>
+											</span>
+											<span class="qa-q-view-who">
+												<span class="qa-q-view-who-pad">by </span>
+												<span class="qa-q-view-who-data"><span class="vcard author"><a href="../user/son4etyyy" class="qa-user-link url nickname">son4etyyy</a></span></span>
+												<span class="qa-q-view-who-points">
+													<span class="qa-q-view-who-points-pad">(</span><span class="qa-q-view-who-points-data">2,150</span><span class="qa-q-view-who-points-pad"> points)</span>
+												</span>
+											</span>
+											<br>
+											<span class="qa-q-view-what">edited</span>
+											<span class="qa-q-view-when">
+												<span class="qa-q-view-when-data"><span class="updated"><span class="value-title" title="2013-01-26T11:50:21+0000"></span>Jan 26</span></span>
+											</span>
+											<span class="qa-q-view-who">
+												<span class="qa-q-view-who-pad">by </span><span class="qa-q-view-who-data"><a href="../user/son4etyyy" class="qa-user-link url nickname">son4etyyy</a></span>
+											</span>
+										</span>
+										<div class="qa-q-view-buttons">
+											<input name="q_doflag" value="flag" title="Flag this question as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+											<input name="q_doanswer" id="q_doanswer" onclick="return qa_toggle_element('anew')" value="answer" title="Answer this question" type="submit" class="qa-form-light-button qa-form-light-button-answer" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-answer';" onmouseout="this.className='qa-form-light-button qa-form-light-button-answer';">
+											<input type="hidden" name="qa_click" value="">
+										</div>
+										
+										<div class="qa-q-view-c-list" style="display:none;" id="c56133_list">
+										</div> <!-- END qa-c-list -->
+										
+									
+									<div class="qa-c-form">
+									</div> <!-- END qa-c-form -->
+									
+								</div></form> <!-- END qa-q-view-main -->
+								<div class="qa-q-view-clear">
+								</div>
+							</div> <!-- END qa-q-view -->
+							
+							<div class="qa-a-form" id="anew" style="display:none;">
+								<h2>Your answer</h2>
+								<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="a_form">
+									<table class="qa-form-tall-table">
+										<tbody><tr>
+											<td class="qa-form-tall-data">
+												<textarea name="a_content" rows="12" cols="40" class="qa-form-tall-text"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td class="qa-form-tall-label">
+												<input name="a_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+												Email me (seytome2001@yahoo.com) if my answer is selected or commented on
+											</td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td colspan="1" class="qa-form-tall-buttons">
+												<input onclick="qa_ckeditor_a_content.updateElement(); return qa_submit_answer(56133);" value="Add answer" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-answer" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-answer';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-answer';">
+												<input name="docancel" onclick="return qa_toggle_element();" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+											</td>
+										</tr>
+									</tbody></table>
+									<input type="hidden" name="a_editor" value="WYSIWYG Editor">
+									<input type="hidden" name="a_doadd" value="1">
+								</form>
+							</div> <!-- END qa-a-form -->
+							
+							<h2><span id="a_list_title">11 Answers</span></h2>
+							<div class="qa-a-list" id="a_list">
+								
+								<div class="qa-a-list-item hentry answer" id="a56467">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_56467">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_56467_1_a56467" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_56467_-1_a56467" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="56467"></a><span class="entry-content"><p>
+	Добър подход е работа със Sass през Webkit (Google Chrome/ Chromium):&nbsp;<b id="internal-source-marker_0.5004801957402378" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"><a rel="nofollow" href="http://blog.q42.nl/post/35203391115/debug-sass-and-less-in-webkit-inspector-and-save-css-cha"><span style="font-size: 15px; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Debug Sass &amp; Less in Webkit Inspector And Save CSS Changes</span></a></b></p>
+<p>
+	За повече подходи (Ruby, Compass, etc.) погледнете моя Reading List:&nbsp;<a href="http://www.facebook.com/l.php?u=http%3A%2F%2Fgoo.gl%2Fn57d8&amp;h=DAQFI52w8" rel="nofollow" style="cursor: pointer; color: rgb(59, 89, 152); font-size: 13px; line-height: 17px;" target="_blank">http://goo.gl/n57d8</a></p>
+<p>
+	За бързо навлизане в Sass също така и&nbsp;<b id="internal-source-marker_0.34616852924227715" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"><a rel="nofollow" href="http://sass.codeschool.com/"><span style="font-size: 15px; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Sass.CodeSchool.com</span></a><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">: Assembling Sass</span></b></p></span>
+											</div>
+											<span class="qa-a-item-avatar">
+												<a href="../user/Evgeni+Leshtanski" class="qa-avatar-link"><img src="http://www.gravatar.com/avatar/f14bbc9407e032904417368e8737f17d?s=40" width="40" height="40" class="qa-avatar-image"></a>
+											</span>
+											<span class="qa-a-item-meta">
+												<a href="?show=56467#a56467" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-01-23T17:28:33+0000"></span>Jan 23</span></span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/Evgeni+Leshtanski" class="qa-user-link url nickname">Evgeni Leshtanski</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">1,120</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a56467_doflag" onclick="return qa_answer_click(56467, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a56467_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a56467_docomment" onclick="return qa_toggle_element('c56467')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" style="display:none;" id="c56467_list">
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c56467" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_56467">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c56467_content" id="c56467_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c56467_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 56467);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c56467_editor" value="">
+												<input type="hidden" name="c56467_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a57595">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_57595">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_57595_1_a57595" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_57595_-1_a57595" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">+3<span class="votes-up"><span class="value-title" title="3"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="57595"></a><span class="entry-content">Здравейте колеги.<br>
+<br>
+Само мен ли ме дразни супер много този плъгин за Visual Studio? Ауто къмплийта и интели сенса са под всякаква критика, а за някакви елементарни функции като подреждане на кода и закоментарване примерно иска платена версия... Mixin-ите как ги оцветява на тъмната тема на Visual Studio даже няма да коментирам. Има ли алтернатива за Visual Studio ?<br>
+<br>
+PS: Колежке оправете Dunamic na Dynamic :).<br>
+<br>
+EDIT: Забравих да добавя, че и JustCode не работи с този плъгин. Не е болка за умиране, но точно в този случай с нестването на тагове, класове и тн скобите стават малко мазало и е нужно да има някаква индикация коя къде започва и свършва.</span>
+											</div>
+											<span class="qa-a-item-avatar">
+												<a href="../user/fifipaldi" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=5030723783413092333&amp;qa_size=40" width="40" height="40" class="qa-avatar-image"></a>
+											</span>
+											<span class="qa-a-item-meta">
+												<a href="?show=57595#a57595" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-01-26T09:31:32+0000"></span>Jan 26</span></span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">2,830</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+												<br>
+												<span class="qa-a-item-what">edited</span>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="updated"><span class="value-title" title="2013-01-26T13:07:46+0000"></span>Jan 26</span></span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span><span class="qa-a-item-who-data"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a57595_doflag" onclick="return qa_answer_click(57595, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a57595_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a57595_docomment" onclick="return qa_toggle_element('c57595')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" id="c57595_list">
+												<div class="qa-c-list-item hentry comment" id="c57646">
+													<span class="qa-c-item-content">
+														<a name="57646"></a><span class="entry-content">Упс, извинявам се за грешката, оправих я.</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/son4etyyy" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=8915481641757418718&amp;qa_size=20" width="11" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=57646#c57646" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-01-26T11:51:18+0000"></span>Jan 26</span></span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/son4etyyy" class="qa-user-link url nickname">son4etyyy</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">2,150</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c57646_doflag" onclick="return qa_comment_click(57646, 56133, 57595, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a57595_docomment" onclick="return qa_toggle_element('c57595')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c57595" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_57595">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c57595_content" id="c57595_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c57595_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 57595);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c57595_editor" value="">
+												<input type="hidden" name="c57595_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a59100">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_59100">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_59100_1_a59100" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_59100_-1_a59100" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="59100"></a><span class="entry-content">Само при мен ли е така:<br>
+<br>
+<a href="http://prikachi.com/images/594/5804594N.jpg" rel="nofollow">http://prikachi.com/images/594/5804594N.jpg</a><br>
+<br>
+&nbsp;<br>
+<br>
+С VS 2012 Express за Desktop и Web съм. Някой ако има идея как да го оправя или друг туул, ще съм благодарен.</span>
+											</div>
+											<span class="qa-a-item-avatar">
+												<a href="../user/ekostadinov" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=17662412707851213265&amp;qa_size=40" width="32" height="40" class="qa-avatar-image"></a>
+											</span>
+											<span class="qa-a-item-meta">
+												<a href="?show=59100#a59100" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-01-30T08:21:59+0000"></span>Jan 30</span></span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/ekostadinov" class="qa-user-link url nickname">ekostadinov</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">470</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+												<br>
+												<span class="qa-a-item-what">edited</span>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="updated"><span class="value-title" title="2013-01-30T08:41:32+0000"></span>Jan 30</span></span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span><span class="qa-a-item-who-data"><a href="../user/ekostadinov" class="qa-user-link url nickname">ekostadinov</a></span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a59100_doflag" onclick="return qa_answer_click(59100, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a59100_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a59100_docomment" onclick="return qa_toggle_element('c59100')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" style="display:none;" id="c59100_list">
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c59100" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_59100">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c59100_content" id="c59100_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c59100_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 59100);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c59100_editor" value="">
+												<input type="hidden" name="c59100_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a59503">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_59503">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_59503_1_a59503" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_59503_-1_a59503" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="59503"></a><span class="entry-content">Здравейте колеги,<br>
+<br>
+За тази първа задача само трябва да направим mixins за clears и gradients и да направим по-лесно да се сменя backgrounda &nbsp;и fonts използвайки SASS или трябва всичко да направим както в на картинката със SASS.<br>
+<br>
+&nbsp;<br>
+<br>
+Edit: Благодаря за второто видео. Отговорих си на въпроса :) Качено е още едно видео за SASS, но в материалите за LESS.</span>
+											</div>
+											<span class="qa-a-item-avatar">
+												<a href="../user/iveta_dilova" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=12103436401329558892&amp;qa_size=40" width="32" height="40" class="qa-avatar-image"></a>
+											</span>
+											<span class="qa-a-item-meta">
+												<a href="?show=59503#a59503" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-01-30T21:11:53+0000"></span>6 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/iveta_dilova" class="qa-user-link url nickname">iveta_dilova</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">200</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+												<br>
+												<span class="qa-a-item-what">edited</span>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="updated"><span class="value-title" title="2013-01-31T11:49:43+0000"></span>6 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span><span class="qa-a-item-who-data"><a href="../user/iveta_dilova" class="qa-user-link url nickname">iveta_dilova</a></span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a59503_doflag" onclick="return qa_answer_click(59503, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a59503_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a59503_docomment" onclick="return qa_toggle_element('c59503')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" id="c59503_list">
+												<div class="qa-c-list-item hentry comment" id="c61481">
+													<span class="qa-c-item-content">
+														<a name="61481"></a><span class="entry-content">Здрасти, къде е това видео, при мен няма качено още в лекцията за LESS? И аз имах същото чудене за домашното..</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/Irina+Antonova" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=16562282180281000059&amp;qa_size=20" width="20" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=61481#c61481" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-05T11:48:34+0000"></span>1 day</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/Irina+Antonova" class="qa-user-link url nickname">Irina Antonova</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">280</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+															<br>
+															<span class="qa-c-item-what">edited</span>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="updated"><span class="value-title" title="2013-02-05T11:53:39+0000"></span>1 day</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span><span class="qa-c-item-who-data"><a href="../user/Irina+Antonova" class="qa-user-link url nickname">Irina Antonova</a></span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c61481_doflag" onclick="return qa_comment_click(61481, 56133, 59503, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a59503_docomment" onclick="return qa_toggle_element('c59503')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c61510">
+													<span class="qa-c-item-content">
+														<a name="61510"></a><span class="entry-content">Бяха качили второ видео за SASS, но в следващата лекция за LESS. Но още същия ден го оправиха и го преместиха в SASS. А във второто видео накрая Дончо обяснява, че можем да ползваме стария CSS от HTML Presentation, задача 2. ... А сега видях, че вече са качили и видео за LESS.</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/iveta_dilova" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=12103436401329558892&amp;qa_size=20" width="16" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=61510#c61510" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-05T13:07:54+0000"></span>1 day</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/iveta_dilova" class="qa-user-link url nickname">iveta_dilova</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">200</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c61510_doflag" onclick="return qa_comment_click(61510, 56133, 59503, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a59503_docomment" onclick="return qa_toggle_element('c59503')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c59503" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_59503">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c59503_content" id="c59503_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c59503_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 59503);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c59503_editor" value="">
+												<input type="hidden" name="c59503_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a59768">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_59768">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_59768_1_a59768" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_59768_-1_a59768" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="59768"></a><span class="entry-content">Здравейте колеги.<br>
+<br>
+Някой може ли да ми каже защо ми се повтаря градиента на фона, че нещо останах без идеи ?<br>
+<br>
+<a href="http://dotnetninja.info/SASSHomework/homework.html" rel="nofollow">http://dotnetninja.info/SASSHomework/homework.html</a></span>
+											</div>
+											<span class="qa-a-item-avatar">
+												<a href="../user/fifipaldi" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=5030723783413092333&amp;qa_size=40" width="40" height="40" class="qa-avatar-image"></a>
+											</span>
+											<span class="qa-a-item-meta">
+												<a href="?show=59768#a59768" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-01-31T14:58:36+0000"></span>6 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">2,830</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a59768_doflag" onclick="return qa_answer_click(59768, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a59768_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a59768_docomment" onclick="return qa_toggle_element('c59768')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" id="c59768_list">
+												<div class="qa-c-list-item hentry comment" id="c59780">
+													<span class="qa-c-item-content">
+														<a name="59780"></a><span class="entry-content">Мисля че е, защото градиента ти е с комбинирания background, а по default background-repeat-a e на repeat.<br>
+<br>
+Порбвах твоя код с<br>
+background-repeat: no-repeat;<br>
+background-color: #9215f2;<br>
+<br>
+edit: това на body {} след дефинициите за градиента..<br>
+<br>
+и стана :)</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/nickeyz" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=1381193098464513646&amp;qa_size=20" width="19" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=59780#c59780" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-01-31T15:20:47+0000"></span>6 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/nickeyz" class="qa-user-link url nickname">nickeyz</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">1,290</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c59780_doflag" onclick="return qa_comment_click(59780, 56133, 59768, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a59768_docomment" onclick="return qa_toggle_element('c59768')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c59781">
+													<span class="qa-c-item-content">
+														<a name="59781"></a><span class="entry-content">при мен изглежда добре. Но се повтаря, ако намалиш страницата. Ако за това питаш - градиентът е от 0% до 100%. Когато намалиш страницата, на екрана се показва повече от 100%. Преди да зададеш градиент, сложи цвят на фона да бъде като цвета, която е сложен на 100% в градиента.</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/Nevencheto" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=6844744964489771721&amp;qa_size=20" width="15" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=59781#c59781" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-01-31T15:22:50+0000"></span>6 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/Nevencheto" class="qa-user-link url nickname">Nevencheto</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">2,260</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c59781_doflag" onclick="return qa_comment_click(59781, 56133, 59768, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a59768_docomment" onclick="return qa_toggle_element('c59768')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c59790">
+													<span class="qa-c-item-content">
+														<a name="59790"></a><span class="entry-content">Благодаря колеги. С fixed отзад се оправи :).</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/fifipaldi" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=5030723783413092333&amp;qa_size=20" width="20" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=59790#c59790" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-01-31T15:34:18+0000"></span>6 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">2,830</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+															<br>
+															<span class="qa-c-item-what">edited</span>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="updated"><span class="value-title" title="2013-01-31T15:59:32+0000"></span>6 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span><span class="qa-c-item-who-data"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c59790_doflag" onclick="return qa_comment_click(59790, 56133, 59768, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a59768_docomment" onclick="return qa_toggle_element('c59768')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c59768" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_59768">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c59768_content" id="c59768_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c59768_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 59768);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c59768_editor" value="">
+												<input type="hidden" name="c59768_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a60043">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_60043">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_60043_1_a60043" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_60043_-1_a60043" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">+2<span class="votes-up"><span class="value-title" title="2"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="60043"></a><span class="entry-content">Колеги здравейте!<br>
+<br>
+Много се мъчих докато свикна с този препроцесор "Sass", след огромни усилия и дълго главоблъскане :) мисля, че успях да му хвана смисъла и начина на писане. Искам да помоля някой ако има малко свободно време да погледне моите писания и да си каже мнението (дали съм го направил правилно, имам ли грешки и т.н.). Също така ми се получава някакъв бъг и незнам как да го оправя : нито един от браузърите не иска да визуализира картинките за "list items" в "aside" &nbsp;(Излиза грешка: "Failed to load the given URL"). Пробвах какво ли не, но идеите ми се изчерпаха.<br>
+<br>
+Благодаря предварително!<br>
+<br>
+<a href="http://dl.dropbox.com/u/103901573/Sass%20Exercise%201.rar" rel="nofollow">http://dl.dropbox.com/u/103901573/Sass%20Exercise%201.rar</a><br>
+<br>
+"Edited" : <a href="http://dl.dropbox.com/u/103901573/Sass%20Exercise%201%20-%20Edited.rar" rel="nofollow">http://dl.dropbox.com/u/103901573/Sass%20Exercise%201%20-%20Edited.rar</a></span>
+											</div>
+											<span class="qa-a-item-meta">
+												<a href="?show=60043#a60043" class="qa-a-item-what">answered</a>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T00:19:10+0000"></span>5 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span>
+													<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span></span>
+													<span class="qa-a-item-who-points">
+														<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">170</span><span class="qa-a-item-who-points-pad"> points)</span>
+													</span>
+												</span>
+												<br>
+												<span class="qa-a-item-what">edited</span>
+												<span class="qa-a-item-when">
+													<span class="qa-a-item-when-data"><span class="updated"><span class="value-title" title="2013-02-01T11:25:07+0000"></span>5 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+												</span>
+												<span class="qa-a-item-who">
+													<span class="qa-a-item-who-pad">by </span><span class="qa-a-item-who-data"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span>
+												</span>
+											</span>
+											<div class="qa-a-item-buttons">
+												<input name="a60043_doflag" onclick="return qa_answer_click(60043, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+												<input name="a60043_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+												<input name="a60043_docomment" onclick="return qa_toggle_element('c60043')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+											</div>
+											
+											<div class="qa-a-item-c-list" id="c60043_list">
+												<div class="qa-c-list-item hentry comment" id="c60058">
+													<span class="qa-c-item-content">
+														<a name="60058"></a><span class="entry-content">Не е добре да ги нестваш толкова много селекторите.</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/jasssonpet" class="qa-avatar-link"><img src="http://www.gravatar.com/avatar/5e44918dea0e1b11d62abbd72c2fed83?s=20" width="20" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=60058#c60058" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T02:33:37+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/jasssonpet" class="qa-user-link url nickname">jasssonpet</a></span></span>
+																<span class="qa-c-item-who-title"><font color="blue">Ninja</font></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">14,960</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c60058_doflag" onclick="return qa_comment_click(60058, 56133, 60043, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a60043_docomment" onclick="return qa_toggle_element('c60043')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c60087">
+													<span class="qa-c-item-content">
+														<a name="60087"></a><span class="entry-content">Благодаря ти, ще опитам да оправя таз грешка. Иначе като цяло, по този начин ли се кодва с "sass" ? И извинявай ако съм нахален, но забеляза ли бъга който съм упоменал в горния пост?<br>
+<br>
+П.С. Съумях и поправих множественото нестване, гледах да нествам максимум до 4 нива(както се препоръчва и във видеото от "Code School") и сега наистина изглежда доста по-добре и по-лесно за поправка. Благодаря още веднъж!</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-meta">
+															<a href="?show=60087#c60087" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T09:11:19+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">170</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+															<br>
+															<span class="qa-c-item-what">edited</span>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="updated"><span class="value-title" title="2013-02-01T11:21:43+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span><span class="qa-c-item-who-data"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c60087_doflag" onclick="return qa_comment_click(60087, 56133, 60043, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a60043_docomment" onclick="return qa_toggle_element('c60043')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c60508">
+													<span class="qa-c-item-content">
+														<a name="60508"></a><span class="entry-content">Трябва да се качиш една директория нагоре: background: url(../images/dot.png);</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-avatar">
+															<a href="../user/jasssonpet" class="qa-avatar-link"><img src="http://www.gravatar.com/avatar/5e44918dea0e1b11d62abbd72c2fed83?s=20" width="20" height="20" class="qa-avatar-image"></a>
+														</span>
+														<span class="qa-c-item-meta">
+															<a href="?show=60508#c60508" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T02:22:53+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/jasssonpet" class="qa-user-link url nickname">jasssonpet</a></span></span>
+																<span class="qa-c-item-who-title"><font color="blue">Ninja</font></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">14,960</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c60508_doflag" onclick="return qa_comment_click(60508, 56133, 60043, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a60043_docomment" onclick="return qa_toggle_element('c60043')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+												<div class="qa-c-list-item hentry comment" id="c60523">
+													<span class="qa-c-item-content">
+														<a name="60523"></a><span class="entry-content">Много ти благодаря колега, отново спаси положението!</span>
+													</span>
+													<div class="qa-c-item-footer">
+														<span class="qa-c-item-meta">
+															<a href="?show=60523#c60523" class="qa-c-item-what">commented</a>
+															<span class="qa-c-item-when">
+																<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T08:04:47+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+															</span>
+															<span class="qa-c-item-who">
+																<span class="qa-c-item-who-pad">by </span>
+																<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span></span>
+																<span class="qa-c-item-who-points">
+																	<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">170</span><span class="qa-c-item-who-points-pad"> points)</span>
+																</span>
+															</span>
+														</span>
+														<div class="qa-c-item-buttons">
+															<input name="c60523_doflag" onclick="return qa_comment_click(60523, 56133, 60043, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+															<input name="a60043_docomment" onclick="return qa_toggle_element('c60043')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+														</div>
+													</div>
+													<div class="qa-c-item-clear">
+													</div>
+												</div> <!-- END qa-c-item -->
+											</div> <!-- END qa-c-list -->
+											
+										
+										<div class="qa-c-form" id="c60043" style="display:none;">
+											<h2>Your comment on this answer:</h2>
+											<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_60043">
+												<table class="qa-form-tall-table">
+													<tbody><tr>
+														<td class="qa-form-tall-data">
+															<textarea name="c60043_content" id="c60043_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+														</td>
+													</tr>
+													<tr>
+														<td class="qa-form-tall-label">
+															<input name="c60043_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+															Email me (seytome2001@yahoo.com) if a comment is added after mine
+														</td>
+													</tr>
+													<tr>
+													</tr>
+													<tr>
+														<td colspan="1" class="qa-form-tall-buttons">
+															<input onclick=" return qa_submit_comment(56133, 60043);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+															<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+														</td>
+													</tr>
+												</tbody></table>
+												<input type="hidden" name="c60043_editor" value="">
+												<input type="hidden" name="c60043_doadd" value="1">
+											</form>
+										</div> <!-- END qa-c-form -->
+										
+									</div></form> <!-- END qa-a-item-main -->
+									<div class="qa-a-item-clear">
+									</div>
+								</div> <!-- END qa-a-list-item -->
+								
+								<div class="qa-a-list-item hentry answer" id="a60059">
+									<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+										<div class="qa-voting qa-voting-net" id="voting_60059">
+											<div class="qa-vote-buttons qa-vote-buttons-net">
+												<input title="Click to vote up" name="vote_60059_1_a60059" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+												<input title="Click to vote down" name="vote_60059_-1_a60059" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+											</div>
+											<div class="qa-vote-count qa-vote-count-net">
+												<span class="qa-netvote-count">
+													<span class="qa-netvote-count-data">+3<span class="votes-up"><span class="value-title" title="3"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+												</span>
+											</div>
+											<div class="qa-vote-clear">
+											</div>
+										</div>
+										<div class="qa-a-item-main">
+											<div class="qa-a-selection">
+											</div>
+											<div class="qa-a-item-content">
+												<a name="60059"></a><span class="entry-content"><p>
+	<strong>Решение:</strong> <a href="https://github.com/jasssonpet/TelerikAcademy/blob/master/WebDesign/2.CSSStyling/4.SASS/1.PinkBlog/index.html" rel="nofollow">html</a>, <a href="https://github.com/jasssonpet/TelerikAcademy/blob/master/WebDesign/2.CSSStyling/4.SASS/1.PinkBlog/styles/style.sass" rel="nofollow">sass</a>, <a href="http://htmlpreview.github.com/?https://github.com/jasssonpet/TelerikAcademy/blob/master/WebDesign/2.CSSStyling/4.SASS/1.PinkBlog/index.html" rel="nofollow">demo</a>.</p>
+<p>
+	В началото съм сложил няколко променливи. Стилизирам в следния ред: reset,&nbsp;тагове, списъци, grid, кутийки, форми, меню и накрая специфичните за сайта елементи. HTML файлът, беше добре написан, но му направих малки промени. Може да се изнесат и още неща като променливи, но не се повтаряха и ги оставих така засега.</p>
+<p>
+	С познатия клас <span style="font-family:courier new,courier,monospace;">.inline</span> от миналите домашни, менюто много лесно се сменя от вертикално на хоризонтално:</p>
+<div>
+	<span style="font-family:courier new,courier,monospace;">.inline {</span></div>
+<div>
+	<span style="font-family:courier new,courier,monospace;">&nbsp; &nbsp; @extend .clearfix</span><br>
+	<span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; li {&nbsp;</span><span style="font-family: 'courier new', courier, monospace;">float: left }</span></div>
+<div>
+	<span style="font-family: 'courier new', courier, monospace;">}</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family:courier new,courier,monospace;">.menu {<br>
+	&nbsp; &nbsp; a { color: #fff; }<br>
+	&nbsp; &nbsp; ...<br>
+	}</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family: 'courier new', courier, monospace;">.menu-horizon</span><span style="font-family: 'courier new', courier, monospace;">tal {</span><br>
+	<span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; @extend .inline</span><br>
+	<span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; @extend .menu</span><br>
+	<span style="font-family: 'courier new', courier, monospace;">}</span></div>
+<div>
+	&nbsp;</div>
+<p>
+	Малко по-дълго стана, но пък си проличава предимството на предпроцесорите. Тези класове ще могат лесно да се преизползват и ще стане по-бързо писането на следващите домашни.</p>
+<p>
+	<strong>Edit:</strong>&nbsp;Малки промени по кода.</p></span>
+																		</div>
+																		<span class="qa-a-item-avatar">
+																			<a href="../user/jasssonpet" class="qa-avatar-link"><img src="http://www.gravatar.com/avatar/5e44918dea0e1b11d62abbd72c2fed83?s=40" width="40" height="40" class="qa-avatar-image"></a>
+																		</span>
+																		<span class="qa-a-item-meta">
+																			<a href="?show=60059#a60059" class="qa-a-item-what">answered</a>
+																			<span class="qa-a-item-when">
+																				<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T02:39:13+0000"></span>5 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+																			</span>
+																			<span class="qa-a-item-who">
+																				<span class="qa-a-item-who-pad">by </span>
+																				<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/jasssonpet" class="qa-user-link url nickname">jasssonpet</a></span></span>
+																				<span class="qa-a-item-who-title"><font color="blue">Ninja</font></span>
+																				<span class="qa-a-item-who-points">
+																					<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">14,960</span><span class="qa-a-item-who-points-pad"> points)</span>
+																				</span>
+																			</span>
+																			<br>
+																			<span class="qa-a-item-what">edited</span>
+																			<span class="qa-a-item-when">
+																				<span class="qa-a-item-when-data"><span class="updated"><span class="value-title" title="2013-02-02T04:53:33+0000"></span>4 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+																			</span>
+																			<span class="qa-a-item-who">
+																				<span class="qa-a-item-who-pad">by </span><span class="qa-a-item-who-data"><a href="../user/jasssonpet" class="qa-user-link url nickname">jasssonpet</a></span>
+																			</span>
+																		</span>
+																		<div class="qa-a-item-buttons">
+																			<input name="a60059_doflag" onclick="return qa_answer_click(60059, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																			<input name="a60059_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+																			<input name="a60059_docomment" onclick="return qa_toggle_element('c60059')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																		</div>
+																		
+																		<div class="qa-a-item-c-list" id="c60059_list">
+																			<div class="qa-c-list-item hentry comment" id="c60127">
+																				<span class="qa-c-item-content">
+																					<a name="60127"></a><span class="entry-content">За съжаление или за щастие, не знам, от твоите постове научавам повече, отколкото от курса... Благодаря!</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/No+Te" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=12451726826990656562&amp;qa_size=20" width="20" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60127#c60127" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T10:51:39+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/No+Te" class="qa-user-link url nickname">No Te</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">1,020</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60127_doflag" onclick="return qa_comment_click(60127, 56133, 60059, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60059_docomment" onclick="return qa_toggle_element('c60059')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																		</div> <!-- END qa-c-list -->
+																		
+																	
+																	<div class="qa-c-form" id="c60059" style="display:none;">
+																		<h2>Your comment on this answer:</h2>
+																		<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_60059">
+																			<table class="qa-form-tall-table">
+																				<tbody><tr>
+																					<td class="qa-form-tall-data">
+																						<textarea name="c60059_content" id="c60059_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="qa-form-tall-label">
+																						<input name="c60059_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+																						Email me (seytome2001@yahoo.com) if a comment is added after mine
+																					</td>
+																				</tr>
+																				<tr>
+																				</tr>
+																				<tr>
+																					<td colspan="1" class="qa-form-tall-buttons">
+																						<input onclick=" return qa_submit_comment(56133, 60059);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+																						<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+																					</td>
+																				</tr>
+																			</tbody></table>
+																			<input type="hidden" name="c60059_editor" value="">
+																			<input type="hidden" name="c60059_doadd" value="1">
+																		</form>
+																	</div> <!-- END qa-c-form -->
+																	
+																</div></form> <!-- END qa-a-item-main -->
+																<div class="qa-a-item-clear">
+																</div>
+															</div> <!-- END qa-a-list-item -->
+															
+															<div class="qa-a-list-item hentry answer" id="a60079">
+																<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+																	<div class="qa-voting qa-voting-net" id="voting_60079">
+																		<div class="qa-vote-buttons qa-vote-buttons-net">
+																			<input title="Click to vote up" name="vote_60079_1_a60079" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+																			<input title="Click to vote down" name="vote_60079_-1_a60079" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+																		</div>
+																		<div class="qa-vote-count qa-vote-count-net">
+																			<span class="qa-netvote-count">
+																				<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+																			</span>
+																		</div>
+																		<div class="qa-vote-clear">
+																		</div>
+																	</div>
+																	<div class="qa-a-item-main">
+																		<div class="qa-a-selection">
+																		</div>
+																		<div class="qa-a-item-content">
+																			<a name="60079"></a><span class="entry-content"><p>
+	Здравейте...</p>
+<p>
+	Искам да попитам някой от вас имал ли е подобен проблем при пускане на домашната на интернет експлорер. Появява ми се една рамка на логото. Пробвах един-два начина да го изчистя, но нищо не се получи.</p>
+<p>
+	<a rel="nofollow" href="http://ivgeorgieva.blogspot.com/" target="_blank">http://ivgeorgieva.blogspot.com/</a></p>
+<p>
+	&nbsp;</p></span>
+																		</div>
+																		<span class="qa-a-item-avatar">
+																			<a href="../user/IvG" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=18216604773707433227&amp;qa_size=40" width="31" height="40" class="qa-avatar-image"></a>
+																		</span>
+																		<span class="qa-a-item-meta">
+																			<a href="?show=60079#a60079" class="qa-a-item-what">answered</a>
+																			<span class="qa-a-item-when">
+																				<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T08:24:01+0000"></span>5 days</span></span><span class="qa-a-item-when-pad"> ago</span>
+																			</span>
+																			<span class="qa-a-item-who">
+																				<span class="qa-a-item-who-pad">by </span>
+																				<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/IvG" class="qa-user-link url nickname">IvG</a></span></span>
+																				<span class="qa-a-item-who-points">
+																					<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">120</span><span class="qa-a-item-who-points-pad"> points)</span>
+																				</span>
+																			</span>
+																		</span>
+																		<div class="qa-a-item-buttons">
+																			<input name="a60079_doflag" onclick="return qa_answer_click(60079, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																			<input name="a60079_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+																			<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																		</div>
+																		
+																		<div class="qa-a-item-c-list" id="c60079_list">
+																			<div class="qa-c-list-item hentry comment" id="c60089">
+																				<span class="qa-c-item-content">
+																					<a name="60089"></a><span class="entry-content">Колежке и при мен е същото, и аз незнам как да го изчистя, какво ли не пробвах, но просто не се маха. Пиши ако решиш проблема някак.</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60089#c60089" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T09:16:43+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">170</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60089_doflag" onclick="return qa_comment_click(60089, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60109">
+																				<span class="qa-c-item-content">
+																					<a name="60109"></a><span class="entry-content">Рамката ще се махне с "border: none;" ;)</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/Martin+Nestorov" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=8373726701617799476&amp;qa_size=20" width="20" height="19" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60109#c60109" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T10:01:49+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/Martin+Nestorov" class="qa-user-link url nickname">Martin Nestorov</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">540</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60109_doflag" onclick="return qa_comment_click(60109, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60123">
+																				<span class="qa-c-item-content">
+																					<a name="60123"></a><span class="entry-content">вече е пробвано...</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/IvG" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=18216604773707433227&amp;qa_size=20" width="15" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60123#c60123" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-01T10:39:00+0000"></span>5 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/IvG" class="qa-user-link url nickname">IvG</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">120</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60123_doflag" onclick="return qa_comment_click(60123, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60764">
+																				<span class="qa-c-item-content">
+																					<a name="60764"></a><span class="entry-content">Здравейте,<br>
+<br>
+Пробвайте с img{border:none; outline:none;}. При мен така се оправя :)</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/iveta_dilova" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=12103436401329558892&amp;qa_size=20" width="16" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60764#c60764" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T16:22:11+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/iveta_dilova" class="qa-user-link url nickname">iveta_dilova</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">200</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60764_doflag" onclick="return qa_comment_click(60764, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60773">
+																				<span class="qa-c-item-content">
+																					<a name="60773"></a><span class="entry-content">Браво колега, получи се! Благодарско от мен!</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60773#c60773" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T16:48:41+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/s.k.kostadinov" class="qa-user-link url nickname">s.k.kostadinov</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">170</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60773_doflag" onclick="return qa_comment_click(60773, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60774">
+																				<span class="qa-c-item-content">
+																					<a name="60774"></a><span class="entry-content">Моля, за нищо :) нали за това е форума :)</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/iveta_dilova" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=12103436401329558892&amp;qa_size=20" width="16" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60774#c60774" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T16:51:03+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/iveta_dilova" class="qa-user-link url nickname">iveta_dilova</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">200</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60774_doflag" onclick="return qa_comment_click(60774, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																			<div class="qa-c-list-item hentry comment" id="c60801">
+																				<span class="qa-c-item-content">
+																					<a name="60801"></a><span class="entry-content">И при мен се получи. Благодаря! :)</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/IvG" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=18216604773707433227&amp;qa_size=20" width="15" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=60801#c60801" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-02T18:30:47+0000"></span>4 days</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/IvG" class="qa-user-link url nickname">IvG</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">120</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c60801_doflag" onclick="return qa_comment_click(60801, 56133, 60079, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a60079_docomment" onclick="return qa_toggle_element('c60079')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																		</div> <!-- END qa-c-list -->
+																		
+																	
+																	<div class="qa-c-form" id="c60079" style="display:none;">
+																		<h2>Your comment on this answer:</h2>
+																		<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_60079">
+																			<table class="qa-form-tall-table">
+																				<tbody><tr>
+																					<td class="qa-form-tall-data">
+																						<textarea name="c60079_content" id="c60079_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="qa-form-tall-label">
+																						<input name="c60079_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+																						Email me (seytome2001@yahoo.com) if a comment is added after mine
+																					</td>
+																				</tr>
+																				<tr>
+																				</tr>
+																				<tr>
+																					<td colspan="1" class="qa-form-tall-buttons">
+																						<input onclick=" return qa_submit_comment(56133, 60079);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+																						<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+																					</td>
+																				</tr>
+																			</tbody></table>
+																			<input type="hidden" name="c60079_editor" value="">
+																			<input type="hidden" name="c60079_doadd" value="1">
+																		</form>
+																	</div> <!-- END qa-c-form -->
+																	
+																</div></form> <!-- END qa-a-item-main -->
+																<div class="qa-a-item-clear">
+																</div>
+															</div> <!-- END qa-a-list-item -->
+															
+															<div class="qa-a-list-item hentry answer" id="a61550">
+																<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+																	<div class="qa-voting qa-voting-net" id="voting_61550">
+																		<div class="qa-vote-buttons qa-vote-buttons-net">
+																			<input title="Click to vote up" name="vote_61550_1_a61550" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+																			<input title="Click to vote down" name="vote_61550_-1_a61550" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+																		</div>
+																		<div class="qa-vote-count qa-vote-count-net">
+																			<span class="qa-netvote-count">
+																				<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+																			</span>
+																		</div>
+																		<div class="qa-vote-clear">
+																		</div>
+																	</div>
+																	<div class="qa-a-item-main">
+																		<div class="qa-a-selection">
+																		</div>
+																		<div class="qa-a-item-content">
+																			<a name="61550"></a><span class="entry-content">Извинявам се за ламерския въпрос, но имам проблем на който не мога да намеря решение... Аз съм със VS Professional и съм инсталирал въпросния Workbench, само че в момента в който натисна Add new Scss file ми излиза следния диалогов прозорец : <a href="http://img803.imageshack.us/img803/2041/11099553.png" rel="nofollow">http://img803.imageshack.us/img803/2041/11099553.png</a></span>
+																		</div>
+																		<span class="qa-a-item-avatar">
+																			<a href="../user/%D0%94%D0%B8%D0%BC%D0%BE+%D0%94%D1%80%D0%B0%D0%B3%D0%BE%D0%B2" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=11830407790580778095&amp;qa_size=40" width="35" height="40" class="qa-avatar-image"></a>
+																		</span>
+																		<span class="qa-a-item-meta">
+																			<a href="?show=61550#a61550" class="qa-a-item-what">answered</a>
+																			<span class="qa-a-item-when">
+																				<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-02-05T14:22:45+0000"></span>1 day</span></span><span class="qa-a-item-when-pad"> ago</span>
+																			</span>
+																			<span class="qa-a-item-who">
+																				<span class="qa-a-item-who-pad">by </span>
+																				<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/%D0%94%D0%B8%D0%BC%D0%BE+%D0%94%D1%80%D0%B0%D0%B3%D0%BE%D0%B2" class="qa-user-link url nickname">Димо Драгов</a></span></span>
+																				<span class="qa-a-item-who-points">
+																					<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">50</span><span class="qa-a-item-who-points-pad"> points)</span>
+																				</span>
+																			</span>
+																		</span>
+																		<div class="qa-a-item-buttons">
+																			<input name="a61550_doflag" onclick="return qa_answer_click(61550, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																			<input name="a61550_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+																			<input name="a61550_docomment" onclick="return qa_toggle_element('c61550')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																		</div>
+																		
+																		<div class="qa-a-item-c-list" id="c61550_list">
+																			<div class="qa-c-list-item hentry comment" id="c62078">
+																				<span class="qa-c-item-content">
+																					<a name="62078"></a><span class="entry-content">Направи си нов web site и дай add -&gt; new stylesheet и пиши filename.less.</span>
+																				</span>
+																				<div class="qa-c-item-footer">
+																					<span class="qa-c-item-avatar">
+																						<a href="../user/fifipaldi" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=5030723783413092333&amp;qa_size=20" width="20" height="20" class="qa-avatar-image"></a>
+																					</span>
+																					<span class="qa-c-item-meta">
+																						<a href="?show=62078#c62078" class="qa-c-item-what">commented</a>
+																						<span class="qa-c-item-when">
+																							<span class="qa-c-item-when-data"><span class="published"><span class="value-title" title="2013-02-06T18:32:10+0000"></span>35 minutes</span></span><span class="qa-c-item-when-pad"> ago</span>
+																						</span>
+																						<span class="qa-c-item-who">
+																							<span class="qa-c-item-who-pad">by </span>
+																							<span class="qa-c-item-who-data"><span class="vcard author"><a href="../user/fifipaldi" class="qa-user-link url nickname">fifipaldi</a></span></span>
+																							<span class="qa-c-item-who-points">
+																								<span class="qa-c-item-who-points-pad">(</span><span class="qa-c-item-who-points-data">2,830</span><span class="qa-c-item-who-points-pad"> points)</span>
+																							</span>
+																						</span>
+																					</span>
+																					<div class="qa-c-item-buttons">
+																						<input name="c62078_doflag" onclick="return qa_comment_click(62078, 56133, 61550, this);" value="flag" title="Flag this comment as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																						<input name="a61550_docomment" onclick="return qa_toggle_element('c61550')" value="reply" title="Reply to this comment" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																					</div>
+																				</div>
+																				<div class="qa-c-item-clear">
+																				</div>
+																			</div> <!-- END qa-c-item -->
+																		</div> <!-- END qa-c-list -->
+																		
+																	
+																	<div class="qa-c-form" id="c61550" style="display:none;">
+																		<h2>Your comment on this answer:</h2>
+																		<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_61550">
+																			<table class="qa-form-tall-table">
+																				<tbody><tr>
+																					<td class="qa-form-tall-data">
+																						<textarea name="c61550_content" id="c61550_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="qa-form-tall-label">
+																						<input name="c61550_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+																						Email me (seytome2001@yahoo.com) if a comment is added after mine
+																					</td>
+																				</tr>
+																				<tr>
+																				</tr>
+																				<tr>
+																					<td colspan="1" class="qa-form-tall-buttons">
+																						<input onclick=" return qa_submit_comment(56133, 61550);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+																						<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+																					</td>
+																				</tr>
+																			</tbody></table>
+																			<input type="hidden" name="c61550_editor" value="">
+																			<input type="hidden" name="c61550_doadd" value="1">
+																		</form>
+																	</div> <!-- END qa-c-form -->
+																	
+																</div></form> <!-- END qa-a-item-main -->
+																<div class="qa-a-item-clear">
+																</div>
+															</div> <!-- END qa-a-list-item -->
+															
+															<div class="qa-a-list-item hentry answer" id="a62076">
+																<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0">
+																	<div class="qa-voting qa-voting-net" id="voting_62076">
+																		<div class="qa-vote-buttons qa-vote-buttons-net">
+																			<input title="Click to vote up" name="vote_62076_1_a62076" onclick="return qa_vote_click(this);" type="submit" value="+" class="qa-vote-first-button qa-vote-up-button" onmouseover="this.className='qa-vote-first-button qa-vote-up-hover';" onmouseout="this.className='qa-vote-first-button qa-vote-up-button';"> 
+																			<input title="Click to vote down" name="vote_62076_-1_a62076" onclick="return qa_vote_click(this);" type="submit" value="–" class="qa-vote-second-button qa-vote-down-button" onmouseover="this.className='qa-vote-second-button qa-vote-down-hover';" onmouseout="this.className='qa-vote-second-button qa-vote-down-button';"> 
+																		</div>
+																		<div class="qa-vote-count qa-vote-count-net">
+																			<span class="qa-netvote-count">
+																				<span class="qa-netvote-count-data">0<span class="votes-up"><span class="value-title" title="0"></span></span><span class="votes-down"><span class="value-title" title="0"></span></span></span><span class="qa-netvote-count-pad"> votes</span>
+																			</span>
+																		</div>
+																		<div class="qa-vote-clear">
+																		</div>
+																	</div>
+																	<div class="qa-a-item-main">
+																		<div class="qa-a-selection">
+																		</div>
+																		<div class="qa-a-item-content">
+																			<a name="62076"></a><span class="entry-content">Аз нещо с това visual studio изобщо неможах да се оправя затова с notepad-чето си действам</span>
+																		</div>
+																		<span class="qa-a-item-avatar">
+																			<a href="../user/iwitass" class="qa-avatar-link"><img src="http://forums.academy.telerik.com//?qa=image&amp;qa_blobid=6240998843804905341&amp;qa_size=40" width="37" height="40" class="qa-avatar-image"></a>
+																		</span>
+																		<span class="qa-a-item-meta">
+																			<a href="?show=62076#a62076" class="qa-a-item-what">answered</a>
+																			<span class="qa-a-item-when">
+																				<span class="qa-a-item-when-data"><span class="published"><span class="value-title" title="2013-02-06T18:19:07+0000"></span>48 minutes</span></span><span class="qa-a-item-when-pad"> ago</span>
+																			</span>
+																			<span class="qa-a-item-who">
+																				<span class="qa-a-item-who-pad">by </span>
+																				<span class="qa-a-item-who-data"><span class="vcard author"><a href="../user/iwitass" class="qa-user-link url nickname">iwitass</a></span></span>
+																				<span class="qa-a-item-who-title"><font color="black">Junior Ninja</font></span>
+																				<span class="qa-a-item-who-points">
+																					<span class="qa-a-item-who-points-pad">(</span><span class="qa-a-item-who-points-data">6,430</span><span class="qa-a-item-who-points-pad"> points)</span>
+																				</span>
+																			</span>
+																		</span>
+																		<div class="qa-a-item-buttons">
+																			<input name="a62076_doflag" onclick="return qa_answer_click(62076, 56133, this);" value="flag" title="Flag this answer as spam or inappropriate" type="submit" class="qa-form-light-button qa-form-light-button-flag" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-flag';" onmouseout="this.className='qa-form-light-button qa-form-light-button-flag';">
+																			<input name="a62076_dofollow" value="ask related question" title="Ask a new question relating to this answer" type="submit" class="qa-form-light-button qa-form-light-button-follow" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-follow';" onmouseout="this.className='qa-form-light-button qa-form-light-button-follow';">
+																			<input name="a62076_docomment" onclick="return qa_toggle_element('c62076')" value="comment" title="Add a comment on this answer" type="submit" class="qa-form-light-button qa-form-light-button-comment" onmouseover="this.className='qa-form-light-hover qa-form-light-hover-comment';" onmouseout="this.className='qa-form-light-button qa-form-light-button-comment';">
+																		</div>
+																		
+																		<div class="qa-a-item-c-list" style="display:none;" id="c62076_list">
+																		</div> <!-- END qa-c-list -->
+																		
+																	
+																	<div class="qa-c-form" id="c62076" style="display:none;">
+																		<h2>Your comment on this answer:</h2>
+																		<form method="POST" action="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" name="c_form_62076">
+																			<table class="qa-form-tall-table">
+																				<tbody><tr>
+																					<td class="qa-form-tall-data">
+																						<textarea name="c62076_content" id="c62076_content" rows="4" cols="40" class="qa-form-tall-text"></textarea>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="qa-form-tall-label">
+																						<input name="c62076_notify" type="checkbox" value="1" checked="" class="qa-form-tall-checkbox">
+																						Email me (seytome2001@yahoo.com) if a comment is added after mine
+																					</td>
+																				</tr>
+																				<tr>
+																				</tr>
+																				<tr>
+																					<td colspan="1" class="qa-form-tall-buttons">
+																						<input onclick=" return qa_submit_comment(56133, 62076);" value="Add comment" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-comment" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-comment';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-comment';">
+																						<input name="docancel" onclick="return qa_toggle_element()" value="Cancel" title="" type="submit" class="qa-form-tall-button qa-form-tall-button-cancel" onmouseover="this.className='qa-form-tall-hover qa-form-tall-hover-cancel';" onmouseout="this.className='qa-form-tall-button qa-form-tall-button-cancel';">
+																					</td>
+																				</tr>
+																			</tbody></table>
+																			<input type="hidden" name="c62076_editor" value="">
+																			<input type="hidden" name="c62076_doadd" value="1">
+																		</form>
+																	</div> <!-- END qa-c-form -->
+																	
+																</div></form> <!-- END qa-a-item-main -->
+																<div class="qa-a-item-clear">
+																</div>
+															</div> <!-- END qa-a-list-item -->
+															
+														</div> <!-- END qa-a-list -->
+														
+														<div class="qa-page-links">
+															<span class="qa-page-links-label">Page:</span>
+															<ul class="qa-page-links-list">
+																<li class="qa-page-links-item">
+																	<span class="qa-page-selected">1</span>
+																</li>
+																<li class="qa-page-links-item">
+																	<a href="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0?start=10#a_list_title" class="qa-page-link">2</a>
+																</li>
+																<li class="qa-page-links-item">
+																	<a href="../56133/css-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE-dynamic-styles-with-sass-1-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0?start=10#a_list_title" class="qa-page-next">next »</a>
+																</li>
+															</ul>
+															<div class="qa-page-links-clear">
+															</div>
+														</div>
+													</div> <!-- END qa-main -->
+													
+													<div class="qa-footer">
+														<div class="qa-nav-footer">
+															<ul class="qa-nav-footer-list">
+																<li class="qa-nav-footer-item qa-nav-footer-feedback">
+																	<a href="../feedback" class="qa-nav-footer-link">Send feedback</a>
+																</li>
+																<li class="qa-nav-footer-item qa-nav-footer-custom-3">
+																	<a href="http://academy.telerik.com/" class="qa-nav-footer-link">Академия за софтуерни инженери</a>
+																</li>
+																<li class="qa-nav-footer-item qa-nav-footer-custom-4">
+																	<a href="http://schoolacademy.telerik.com" class="qa-nav-footer-link">Училищна академия</a>
+																</li>
+																<li class="qa-nav-footer-item qa-nav-footer-custom-5">
+																	<a href="http://www.telerik-kids.com" class="qa-nav-footer-link">Telerik Kids - програмиране за деца</a>
+																</li>
+																<li class="qa-nav-footer-item qa-nav-footer-custom-6">
+																	<a href="http://algoacademy.telerik.com" class="qa-nav-footer-link">Telerik Algo Academy</a>
+																</li>
+															</ul>
+															<div class="qa-nav-footer-clear">
+															</div>
+														</div>
+														<div class="qa-attribution">
+															Powered by <a href="http://www.question2answer.org/">Question2Answer</a>
+														</div>
+														<div class="qa-footer-clear">
+														</div>
+													</div> <!-- END qa-footer -->
+													
+												</div> <!-- END body-wrapper -->
+											
+											<!-- Powered by Question2Answer - http://www.question2answer.org/ -->
+										
+<!--
+It's no big deal, but your HTML could not be indented properly. To fix, please:
+1. Use this->output() to output all HTML.
+2. Balance all paired tags like <TD>...</TD> or <DIV>...</DIV>.
+3. Use a slash at the end of unpaired tags like <img/> or <input/>.
+Thanks!
+-->
+</body></html>
