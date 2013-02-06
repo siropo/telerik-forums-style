@@ -235,21 +235,21 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 .qa-vote-one-button {margin:12px 0;}
 .qa-vote-second-button {margin-top:12px;}
 
-.qa-vote-up-button,.qa-vote-up-hover,.qa-vote-up-disabled {background:url(vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
+.qa-vote-up-button,.qa-vote-up-hover,.qa-vote-up-disabled {background:url(http://forums.academy.telerik.com/qa-theme/Default/vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
 	.qa-vote-up-button {background-position:0 0; color:#38544e;}
 	.qa-vote-up-disabled {background-position:0 -60px; color:#38544e;}
 	.qa-vote-up-hover,.qa-vote-up-button:hover {background-position:0 -15px; color:#65968e;}
 
-.qa-vote-down-button,.qa-vote-down-hover,.qa-vote-down-disabled {background:url(vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
+.qa-vote-down-button,.qa-vote-down-hover,.qa-vote-down-disabled {background:url(http://forums.academy.telerik.com/qa-theme/Default/vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
 	.qa-vote-down-button {background-position:-17px 0; color:#38544e;}
 	.qa-vote-down-disabled {background-position:-17px -60px; color:#38544e;}
 	.qa-vote-down-hover,.qa-vote-down-button:hover {background-position:-17px -15px; color:#65968e;}
 	
-.qa-voted-up-button,.qa-voted-up-hover {background:url(vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
+.qa-voted-up-button,.qa-voted-up-hover {background:url(http://forums.academy.telerik.com/qa-theme/Default/vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px;}
 	.qa-voted-up-button {background-position:0 -30px; color:#f3cb7f;}
 	.qa-voted-up-hover,.qa-voted-up-button:hover {background-position:0 -45px; color:#f3cb7f;}
 
-.qa-voted-down-button,.qa-voted-down-hover {background:url(vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px; margin:12px 0;}
+.qa-voted-down-button,.qa-voted-down-hover {background:url(http://forums.academy.telerik.com/qa-theme/Default/vote-buttons.gif) no-repeat; border:0; font-size:1px; height:15px; width:17px; margin:12px 0;}
 	.qa-voted-down-button {background-position:-17px -30px; color:#f3cb7f;}
 	.qa-voted-down-hover,.qa-voted-down-button:hover {background-position:-17px -45px; color:#f3cb7f;}
 
@@ -428,12 +428,17 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
     .qa-sidepanel {
         width: 100%;
         float: none;
+        display: none;
     }
 
     .qa-main {
         float: none;
         width: 100%;
     }
+
+    .qa-q-item-main {
+		width: 93%;
+	}
 
 }
 
@@ -442,6 +447,45 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 ***********************************************************/
 
 @media screen and (min-width: 180px) and (max-width: 600px) {
+	.qa-header {
+		padding: 5px 3px 0 5px;
+		border-bottom: 2px solid #293d39;
+	}
+
+	.qa-logo {
+		text-align: center;
+		float: none;
+		margin-bottom: 12px;
+		font-size: 28px;
+	}
+
+	.qa-search {
+		float: none;
+		clear: none;
+		text-align: center;
+	}
+
+	.qa-nav-user {
+		text-align: center;
+		float: none;
+		font-size: 14px;
+		white-space: normal;
+	}
+
+	.qa-nav-main-item-opp {
+		float: none;
+		margin-left: 0;
+		margin-right: 4px;
+	}
+
+	.qa-nav-user li a {
+		white-space: nowrap;
+	}
+
+	.qa-nav-main-item {
+		float: none;
+	}
+
     .qa-body-wrapper {
         width: 98%;
     }
@@ -449,10 +493,89 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
     .qa-sidepanel {
         width: 100%;
         float: none;
+        display: none;
     }
 
     .qa-main {
         float: none;
         width: 100%;
+        padding-left: 3px;
     }
+
+    .qa-voting {
+    	margin-left: 5px;
+		
+	}
+
+	.qa-a-count {
+		
+	}
+
+    .qa-q-item-main {
+    	margin-top: 5px;
+    	margin-left: 5px;
+		width: 96%;
+	}
+
+	.qa-a-item-main {
+		float: none;
+		width: 96%;
+	}
+
+	.qa-q-view-main {
+		float: none;
+		width: 96%;
+	}
+
+	.qa-a-item-buttons {
+		text-align: left;
+	}
+
+	.qa-form-light-button {
+		margin-top: 10px;
+		color: #da930e;
+	}
+
+	.qa-c-item-buttons {
+		position: relative;
+	}
+
+	.qa-suggest-next a {
+		line-height: 35px;
+	}
+
+	/* user account view */
+	.qa-form-tall-data {
+		width: 100%;
+	}
+
+	.qa-form-tall-image {
+		text-align: left;
+	}
+
+	.qa-form-wide-table {
+		margin-right: 5px;
+	}
+
+	/* user account settings */
+	.qa-form-wide-text {
+		width: 98%;
+	}
+
+	input[type="file"] {
+		width: 100%;
+	}
+
+	/* ask question form */
+	.qa-form-tall-table {
+		width: 100%;
+	}
+
+	.qa-form-tall-text {
+		width: 100%;
+	}
+
+	select {
+		width: 100%;
+	}
 }
