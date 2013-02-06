@@ -517,6 +517,18 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 		width: 96%;
 	}
 
+	.qa-a-item-content {
+		margin-left: 5px;
+	}
+
+	.qa-a-item-avatar {
+		margin-left: 5px;
+	}
+
+	.qa-a-item-meta {
+		margin-left: 5px;
+	}
+
 	.qa-a-item-main {
 		float: none;
 		width: 96%;
@@ -525,9 +537,12 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 	.qa-q-view-main {
 		float: none;
 		width: 96%;
+		clear: both;
+		margin-left: 5px;
 	}
 
 	.qa-a-item-buttons {
+		margin-left: 5px;
 		text-align: left;
 	}
 
