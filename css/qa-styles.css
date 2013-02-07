@@ -535,6 +535,7 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 
 	.qa-c-item-buttons {
 		position: relative;
+		text-align: right;
 	}
 
 	.qa-suggest-next a {
