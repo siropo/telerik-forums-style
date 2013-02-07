@@ -572,6 +572,10 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 		width: 100%;
 	}
 
+	.qa-form-wide-label {
+		white-space: normal;
+	}
+
 	select {
 		width: 100%;
 	}
