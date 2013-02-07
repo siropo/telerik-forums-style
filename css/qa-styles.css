@@ -518,6 +518,11 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 		margin-left: 5px;
 	}
 
+	.qa-q-view img {
+		max-width: 97.5%;
+		height: auto;
+	}
+
 	.qa-a-item-buttons {
 		margin-left: 5px;
 		text-align: left;
@@ -542,7 +547,7 @@ h2 {font-size:16px; padding-top:12px; clear:both;}
 	}
 
 	.qa-form-tall-image {
-		text-align: left;
+		text-align: center;
 	}
 
 	.qa-form-wide-table {
