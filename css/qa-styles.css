@@ -11,7 +11,7 @@
 /* General page layout */
 
 body {
-    background:#cfd1c4;
+    background: url('BackgroundStripes.png') repeat #21242d;
     margin:0;
     padding:0;
     text-align:center;
@@ -193,8 +193,16 @@ h2 {
 }
 .qa-widget-side {
     margin:16px 0;
-    width:176px;
+    /* width:176px; */
+    border: 1px solid #d9d9d9;
+    background-color: #f1f1f1;
+    padding: 4px;
 }
+
+.qa-widget-side a {
+    color: #06a;
+}
+
 /* Header sections */
 .qa-logo {
     float:left;
@@ -310,12 +318,21 @@ h2 {
 }
 .qa-nav-cat {
     margin:24px 0;
+    border: 1px solid #d9d9d9;
+    background-color: #f1f1f1;
+    padding: 4px;
 }
 .qa-nav-cat-list {
     list-style:none;
     padding:0;
     margin:0;
 }
+.qa-nav-cat-list.qa-nav-cat-link {
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
 .qa-nav-cat-list-1 {
     font-size:14px;
 }
@@ -335,7 +352,9 @@ h2 {
     margin:0.5em 0;
 }
 .qa-nav-cat-link {
-    font-weight:bold;
+    outline: none;
+    text-decoration: none;
+    color: #06a;
 }
 .qa-nav-cat-selected,.qa-nav-cat-selected:hover {
     text-decoration:none;
@@ -575,7 +594,8 @@ h2 {
     font-size:16px;
 }
 .qa-q-item-title a {
-    color:#235272;
+    color: #06a;
+    /* color:#235272; old color */
 }
 .qa-q-item-content {
     font-size:10px;
@@ -1253,7 +1273,7 @@ h2 {
     font-weight:bold;
 }
 .qa-category-link {
-    color:#473A9F;
+    color:#06a;
     font-weight:bold;
 }
 .qa-tag-link {
