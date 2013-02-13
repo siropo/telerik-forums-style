@@ -21,6 +21,7 @@ body,td,input,textarea {
     font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 a:link,a:active,a:visited {
+    color: #0f793e;
     text-decoration:none;
 }
 a:hover {
@@ -112,9 +113,18 @@ h2 {
 }
 /* Page sections */
 .qa-header {
-    padding:10px 20px 0 20px;
+    position: relative;
+    height: 160px;
+    padding: 0;
     border-bottom:2px solid #293d39;
+    background: url(header.jpg) no-repeat;
+    background-position: 0 -30px;
 }
+
+.qa-header a {
+    color: #fff;
+}
+
 .qa-sidepanel {
     float:right;
     width:176px;
@@ -159,6 +169,12 @@ h2 {
     font-size:10px;
     padding:12px;
 }
+
+.qa-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
 * html .qa-footer {
     padding-top:6px;
 }
@@ -200,26 +216,43 @@ h2 {
 }
 
 .qa-widget-side a {
-    color: #06a;
+    color: #5a9570;
 }
 
 /* Header sections */
 .qa-logo {
-    float:left;
-    margin-bottom:16px;
-    font-size:32px;
-    font-weight:bold;
-    color:#293d39;
+    position: absolute;
+    top: 70px;
+    left: 310px;
+    text-align: center;
+    /* float:left; 
+    margin-bottom:16px;*/
+    font-family: Georgia;
+    font-size:34px;
+    color: #fff;;
 }
 .qa-logo-link, .qa-logo-link:hover {
-    color:#293d39;
+    color:#fff;
 }
 .qa-nav-user {
-    float:right;
-    font-size:14px;
+    width: 940px;
+    padding: 5px 20px;
+    background: #293d39;
+    
+    font-size:13px;
     color:#293D39;
+    text-align: right;
     white-space:nowrap;
 }
+
+.qa-nav-user .qa-logged-in-pad {
+    color: #fff;
+}
+
+.qa-nav-user .qa-nav-user-link {
+    color: #fff;
+}
+
 .qa-nav-user-list {
     list-style:none;
     padding:0;
@@ -238,17 +271,38 @@ h2 {
     display:inline;
 }
 .qa-search {
+    margin-top: 20px;
+    margin-right: 20px;
     float:right;
-    clear:right;
-    margin-top:12px;
     white-space:nowrap;
 }
+
+.qa-search-button {
+    padding: 3px 15px;
+    background: #7caa0d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7caa0d 0%, #5d8b2c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7caa0d), color-stop(100%,#5d8b2c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #7caa0d 0%,#5d8b2c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #7caa0d 0%,#5d8b2c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #7caa0d 0%,#5d8b2c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #7caa0d 0%,#5d8b2c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7caa0d', endColorstr='#5d8b2c',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    border: 1px solid #4c7b1d;
+    border-top: 1px solid #bde95c;
+    border-radius: 3px;
+}
+
 .qa-search-field {
     width:12em;
     margin-right:2px;
 }
 /* Main, sub and category navigation */
 .qa-nav-main {
+    width: 940px;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
     clear:both;
 }
 .qa-nav-main-list {
@@ -287,10 +341,19 @@ h2 {
     background:#f66;
 }
 .qa-nav-sub {
-    clear:both;
-    float:left;
-    padding-top:3px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    padding-top: 3px;
+    /* clear:both;
+    float:left; */
+
 }
+
+.qa-nav-sub a {
+    color: #293d39;
+}
+
 .qa-nav-sub-list {
     font-size:12px;
     list-style:none;
@@ -354,7 +417,7 @@ h2 {
 .qa-nav-cat-link {
     outline: none;
     text-decoration: none;
-    color: #06a;
+    color: #5a9570;
 }
 .qa-nav-cat-selected,.qa-nav-cat-selected:hover {
     text-decoration:none;
@@ -594,7 +657,7 @@ h2 {
     font-size:16px;
 }
 .qa-q-item-title a {
-    color: #06a;
+    color: #293d39;
     /* color:#235272; old color */
 }
 .qa-q-item-content {
@@ -1268,12 +1331,12 @@ h2 {
     color:#f5d495;
 }
 /* Classes in HTML passed to theme class */
-.qa-user-link {
-    color:#079075;
+.qa-nav-user a {
+    color:#77a715;
     font-weight:bold;
 }
 .qa-category-link {
-    color:#06a;
+    color:#5a9570;
     font-weight:bold;
 }
 .qa-tag-link {
@@ -1338,7 +1401,7 @@ h2 {
 *******************************************************/
 
 @media screen and (min-width:180px) and (max-width:600px) {
-    .qa-header {
+.qa-header {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
 }
@@ -1347,6 +1410,7 @@ h2 {
     float:none;
     margin-bottom:12px;
     font-size:28px;
+
 }
 .qa-search {
     float:none;
