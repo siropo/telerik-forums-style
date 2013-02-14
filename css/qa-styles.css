@@ -742,8 +742,8 @@ h2 {
 /* Votes */
 /* qa-*-hover classes are substituted by JS (for IE), qa-*-button:hover is a backup for other browsers if JS is off */
 .qa-voting {
-    background:#98b86b;
-    border:1px solid #678440;
+    background:#f1f1f1;
+    border:1px solid #d9d9d9;
     margin-right:16px;
     float:left;
     height:42px;
@@ -866,8 +866,8 @@ h2 {
 /* Answers and views count */
 .qa-a-count {
     /* background:#f7cd7d; */
-    background: #eda747;
-    border:1px solid #cf8b25;
+    background:#ffd191;
+    border:1px solid #e4b369;
     text-align:center;
     width:60px;
     height:42px;
