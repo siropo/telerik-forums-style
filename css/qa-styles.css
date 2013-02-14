@@ -57,6 +57,9 @@ p {
     margin:0 auto;
     margin-top:-1px;
     text-align:left;
+    -moz-box-shadow: 0px 1px 1.4em #000;
+    -webkit-box-shadow: 0px 1px 1.4em #000;
+    box-shadow: 0px 1px 1.4em #000;
 }
 /* Clearing classes */
 .qa-nav-main-clear,.qa-nav-sub-clear,.qa-q-item-clear,.qa-q-view-clear,.qa-a-item-clear,.qa-c-item-clear,.qa-footer-clear,.qa-vote-count-clear,.qa-page-links-clear {
@@ -1390,50 +1393,97 @@ h2 {
 ************************************************/
 
 @media screen and (min-width:600px) and (max-width:988px) {
-    .qa-body-wrapper {
+.qa-body-wrapper {
     width:98%;
 }
- .qa-sidepanel {
-    width:100%;
-    float:none;
-    display:none;
+
+
+.qa-logo {
+    top: 35px;
+    left: 20px;
+    font-size: 30px;
 }
+
+.qa-header {
+    width: 100%;
+}
+
+.qa-nav-main {
+    width: 95%;
+}
+
+.qa-nav-user {
+    width: 95%;
+}
+
+.qa-q-view-main {
+    width: 65%;
+}
+
+ .qa-sidepanel {
+    width: 25%;
+}
+
  .qa-main {
-    float:none;
-    width:100%;
+
+    width:65%;
 }
  .qa-q-item-main {
-    width:93%;
+    width:65%;
 }
 }
 
 /****************************************************
-********* for resolution for resolution 320 to 600 *****
+********* for resolution for resolution 410 to 600 *****
 *******************************************************/
 
-@media screen and (min-width:180px) and (max-width:600px) {
+@media screen and (min-width:410px) and (max-width:600px) {
 .qa-header {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
+    height: auto;
+    background: #77a715;
 }
+
 .qa-logo {
+    position: relative;
     text-align:center;
     float:none;
     margin-bottom:12px;
     font-size:28px;
-
+    width: 100%;
+    top: 30px;
+    left: 0;
+    text-align: center;
+}
+.qa-nav-main {
+    position: relative;
+    padding: 0;
+    width: 100%;
 }
 .qa-search {
+    margin-top: 45px;
+    position: relative;
     float:none;
     clear:none;
     text-align:center;
 }
 .qa-nav-user {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     text-align:center;
     float:none;
     font-size:14px;
     white-space:normal;
 }
+
+.qa-nav-sub {
+    top: auto;
+}
+
 .qa-nav-main-item-opp {
     float:none;
     margin-left:0;
@@ -1460,9 +1510,16 @@ h2 {
     padding-left:3px;
 }
  .qa-voting {
+    padding: 0;
     margin-left:5px;
 }
+
+.qa-vote-buttons {
+    width: auto;
+}
+
 .qa-a-count {
+    padding: 0;
 }
  .qa-q-item-main {
     margin-top:5px;
@@ -1538,3 +1595,167 @@ select {
     width:100%;
 }
 }
+
+/****************************************************
+********* for resolution for resolution 180 to 410 *****
+*******************************************************/
+
+@media screen and (min-width:180px) and (max-width:410px) {
+.qa-header {
+    padding:5px 3px 0 5px;
+    border-bottom:2px solid #293d39;
+    height: auto;
+    background: #77a715;
+}
+
+.qa-logo {
+    position: relative;
+    text-align:center;
+    float:none;
+    margin-bottom:12px;
+    font-size:28px;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    text-align: center;
+}
+.qa-nav-main {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.qa-search {
+    margin-top: 80px;
+    position: relative;
+    float:none;
+    clear:none;
+    text-align:center;
+}
+.qa-nav-user {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align:center;
+    float:none;
+    font-size:14px;
+    white-space:normal;
+}
+
+.qa-nav-sub {
+    top: auto;
+}
+
+.qa-nav-main-item-opp {
+    float:none;
+    margin-left:0;
+    margin-right:4px;
+}
+.qa-nav-user li a {
+    line-height:30px;
+    white-space:nowrap;
+}
+.qa-nav-main-item {
+    float:none;
+}
+ .qa-body-wrapper {
+    width:98%;
+}
+ .qa-sidepanel {
+    width:100%;
+    float:none;
+    display:none;
+}
+ .qa-main {
+    float:none;
+    width:100%;
+    padding-left:3px;
+}
+ .qa-voting {
+    padding: 0;
+    margin-left:5px;
+}
+
+.qa-vote-buttons {
+    width: auto;
+}
+
+.qa-a-count {
+    padding: 0;
+}
+ .qa-q-item-main {
+    margin-top:5px;
+    margin-left:5px;
+    width:96%;
+}
+.qa-a-item-content {
+    margin-left:5px;
+}
+.qa-a-item-avatar {
+    margin-left:5px;
+}
+.qa-a-item-meta {
+    margin-left:5px;
+}
+.qa-a-item-main {
+    float:none;
+    width:96%;
+}
+.qa-q-view-main {
+    float:none;
+    width:96%;
+    clear:both;
+    margin-left:5px;
+}
+.qa-q-view img {
+    max-width:97.5%;
+    height:auto;
+}
+.qa-a-item-buttons {
+    margin-left:5px;
+}
+.qa-form-light-button {
+    margin-top:10px;
+    /*color:#da930e;
+    */
+}
+.qa-c-item-buttons {
+    position:relative;
+    text-align:right;
+}
+.qa-suggest-next a {
+    line-height:35px;
+}
+/* user account view */
+.qa-form-tall-data {
+    width:100%;
+}
+.qa-form-tall-image {
+    text-align:left;
+}
+.qa-form-wide-table {
+    margin-right:5px;
+}
+/* user account settings */
+.qa-form-wide-text {
+    width:98%;
+}
+input[type="file"] {
+    width:100%;
+}
+/* ask question form */
+.qa-form-tall-table {
+    width:100%;
+}
+.qa-form-tall-text {
+    width:100%;
+}
+.qa-form-wide-label {
+    white-space:normal;
+}
+select {
+    width:100%;
+}
+}
+
