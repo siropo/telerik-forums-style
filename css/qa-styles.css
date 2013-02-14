@@ -406,7 +406,7 @@ h2 {
 }
 
 .qa-nav-cat-list-1 {
-    font-size:14px;
+    font-size:12px;
 }
 .qa-nav-cat-list-2 {
     font-size:12px;
@@ -1349,21 +1349,21 @@ h2 {
     font-weight:bold;
 }
 .qa-tag-link {
-    font-size:11px;
-    color:#FFF !important;
-    font-weight:bold;
-    padding:3px 5px;
-    margin-bottom:3px;
-    background-color:#658296;
-    display:-moz-inline-stack;
-    display:inline-block;
-    vertical-align:middle;
-    text-decoration:none !important;
+    font-size: 11px;
+    color: #FFF !important;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+    background-color: #d98716;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 1px 1px 2px rgba(15, 15, 15, 0.3);
+    text-decoration: none !important;
 }
  /* inline-block for IE, -moz-inline-stack for early FF */
 .qa-tag-link:hover {
     text-decoration:none;
-    background-color:#235272;
+    background-color:#eda747;
 }
 .qa-avatar-image {
     border:0;
