@@ -1354,7 +1354,7 @@ h2 {
     color: #FFF !important;
     padding: 3px 5px;
     margin-bottom: 3px;
-    background-color: #d98716;
+    background-color: #336b5e;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
@@ -1364,7 +1364,7 @@ h2 {
  /* inline-block for IE, -moz-inline-stack for early FF */
 .qa-tag-link:hover {
     text-decoration:none;
-    background-color:#eda747;
+    background-color:#e4b369;
 }
 .qa-avatar-image {
     border:0;
