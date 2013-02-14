@@ -30,6 +30,12 @@ a:hover {
 p {
     margin-top:0;
 }
+.qa-q-item-who-data a, .vcard.author a {
+    color: #293d39;
+    font-weight: bold;
+    font-size: 11px;
+}
+
 .qa-notice {
     background:#fdd;
     border-bottom:2px solid #293d39;
@@ -1396,7 +1402,6 @@ h2 {
 .qa-body-wrapper {
     width:98%;
 }
-
 
 .qa-logo {
     top: 35px;
