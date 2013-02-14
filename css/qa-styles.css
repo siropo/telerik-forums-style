@@ -313,8 +313,11 @@ h2 {
 }
 
 .qa-search-field {
-    width:12em;
-    margin-right:2px;
+    width: 12em;
+    margin-right: 2px;
+    line-height: 18px;
+    background: rgb(232, 255, 233);
+    border: 1px solid #4c7b1d;
 }
 /* Main, sub and category navigation */
 .qa-nav-main {
