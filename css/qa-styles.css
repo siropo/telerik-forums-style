@@ -1560,11 +1560,6 @@ h2 {
 .qa-a-item-buttons {
     margin-left:5px;
 }
-
-.qa-favoriting {
-    padding-right:8px;
-}
-
 .qa-form-light-button {
     margin-top:10px;
     /*color:#da930e;
@@ -1688,10 +1683,6 @@ select {
  .qa-voting {
     padding: 0;
     margin-left:5px;
-}
-
-.qa-favoriting {
-    padding-right:8px;
 }
 
 .qa-vote-buttons {
