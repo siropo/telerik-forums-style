@@ -125,7 +125,7 @@ h2 {
     position: relative;
     height: 140px;
     padding: 0;
-    border-bottom:2px solid #293d39;
+    border-bottom:1px solid #293d39;
     background: url(header.jpg) no-repeat;
     background-position: 0 -40px;
 }
