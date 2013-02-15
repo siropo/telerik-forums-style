@@ -312,6 +312,18 @@ h2 {
     border-top: 1px solid #bde95c;
 }
 
+.qa-search-button:hover {
+    background: #91c80f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #91c80f 0%, #5d8b2c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#91c80f), color-stop(100%,#5d8b2c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #91c80f 0%,#5d8b2c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #91c80f 0%,#5d8b2c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #91c80f 0%,#5d8b2c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #91c80f 0%,#5d8b2c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7caa0d', endColorstr='#5d8b2c',GradientType=0 ); /* IE6-9 */
+}
+
+
 .qa-search-field {
     width: 12em;
     margin-right: 2px;
