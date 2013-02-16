@@ -1366,11 +1366,30 @@ h2 {
 .qa-attribution a:hover {
     color:#f5d495;
 }
-/* Classes in HTML passed to theme class */
+
+/* Classes in HTML passed to theme class 
 .qa-nav-user a {
     color:#77a715;
     font-weight:bold;
 }
+*/
+
+/* fix by kunev
+/* add */
+.qa-logged-in .qa-user-link { /* adds color and weight only to username */
+    color: #77a715;
+    font-weight: bold;
+}
+
+.qa-nav-user-list .qa-nav-user-selected { /* adds weight to selected link */
+    font-weight: bold;
+}
+
+/* implicitly add white color if necessary */
+.qa-nav-user-list a.qa-nav-user-link { 
+    color: #fff;
+}
+/* end kunev */
 .qa-category-link {
     color:#0f793e;
     font-weight:bold;
