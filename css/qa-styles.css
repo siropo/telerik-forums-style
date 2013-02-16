@@ -1374,6 +1374,16 @@ h2 {
 }
 */
 
+.qa-a-item-meta a, .qa-c-item-meta a, .qa-q-item-meta a {
+    color: #4a7b5c;
+}   
+
+.qa-q-view-who-data a {
+    color: #293d39;
+    font-weight: bold;
+    font-size: 11px;
+}
+
 /* fix by kunev
 /* add */
 .qa-logged-in .qa-user-link { /* adds color and weight only to username */
