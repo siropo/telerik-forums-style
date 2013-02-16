@@ -21,7 +21,6 @@ body,td,input,textarea {
     font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 a:link,a:active,a:visited {
-    /*color: #0f793e;*/
     text-decoration:none;
 }
 a:hover {
@@ -1412,10 +1411,10 @@ h2 {
 }
 
 /*************************************************
-************ for resolution 600 to 943 ************
+************ for resolution 620 to 943 ************
 ************************************************/
 
-@media screen and (min-width:600px) and (max-width:988px) {
+@media screen and (min-width:620px) and (max-width:988px) {
 .qa-body-wrapper {
     width:98%;
 }
@@ -1428,6 +1427,8 @@ h2 {
 
 .qa-header {
     width: 100%;
+    background: url(header.jpg) no-repeat;
+    background-position: 30% 65%;
 }
 
 .qa-nav-main {
@@ -1451,20 +1452,22 @@ h2 {
     width:65%;
 }
  .qa-q-item-main {
-    width:65%;
+    width:100%;
 }
 }
 
 /****************************************************
-********* for resolution for resolution 455 to 600 *****
+********* for resolution for resolution 455 to 620 *****
 *******************************************************/
 
-@media screen and (min-width:455px) and (max-width:600px) {
+@media screen and (min-width:455px) and (max-width:620px) {
 .qa-header {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
     height: auto;
-    background: #77a715;
+    background-position: 30% 65%;
+    background: #77a715 url(header.jpg) no-repeat;
+    background-position: 50% -23%;
 }
 
 .qa-logo {
@@ -1474,7 +1477,7 @@ h2 {
     margin-bottom:12px;
     font-size:28px;
     width: 100%;
-    top: 30px;
+    top: 50px;
     left: 0;
     text-align: center;
 }
@@ -1484,7 +1487,7 @@ h2 {
     width: 100%;
 }
 .qa-search {
-    margin-top: 45px;
+    margin-top: 54px;
     position: relative;
     float:none;
     clear:none;
@@ -1627,7 +1630,8 @@ select {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
     height: auto;
-    background: #77a715;
+    background: #77a715 url(header.jpg) no-repeat;
+    background-position: 50% -6%;
 }
 
 .qa-logo {
@@ -1637,7 +1641,7 @@ select {
     margin-bottom:12px;
     font-size:28px;
     width: 100%;
-    top: 70px;
+    top: 82px;
     left: 0;
     text-align: center;
 }
@@ -1647,7 +1651,7 @@ select {
     width: 100%;
 }
 .qa-search {
-    margin-top: 80px;
+    margin-top: 90px;
     position: relative;
     float:none;
     clear:none;
