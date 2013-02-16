@@ -1454,10 +1454,10 @@ h2 {
 }
 
 /****************************************************
-********* for resolution for resolution 410 to 600 *****
+********* for resolution for resolution 455 to 600 *****
 *******************************************************/
 
-@media screen and (min-width:410px) and (max-width:600px) {
+@media screen and (min-width:455px) and (max-width:600px) {
 .qa-header {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
@@ -1617,10 +1617,10 @@ select {
 }
 
 /****************************************************
-********* for resolution for resolution 180 to 410 *****
+********* for resolution for resolution 180 to 455 *****
 *******************************************************/
 
-@media screen and (min-width:180px) and (max-width:410px) {
+@media screen and (min-width:180px) and (max-width:455px) {
 .qa-header {
     padding:5px 3px 0 5px;
     border-bottom:2px solid #293d39;
