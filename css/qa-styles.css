@@ -21,7 +21,7 @@ body,td,input,textarea {
     font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 a:link,a:active,a:visited {
-    color: #0f793e;
+    /*color: #0f793e;*/
     text-decoration:none;
 }
 a:hover {
@@ -262,7 +262,7 @@ h2 {
     color:#293D39;
     text-align: right;
     white-space:nowrap;
-    border-bottom: 1px solid #47d351;
+
 }
 
 .qa-nav-user .qa-logged-in-pad {
@@ -282,7 +282,7 @@ h2 {
 .qa-nav-user-item {
     display:inline;
     margin-left:12px;
-    font-weight:bold;
+    /*font-weight:normal;*/
 }
 .qa-nav-user-link {
     color:#293d39;
@@ -310,6 +310,7 @@ h2 {
     color: #fff;
     border: 1px solid #4c7b1d;
     border-top: 1px solid #bde95c;
+
 }
 
 .qa-search-button:hover {
@@ -321,6 +322,7 @@ h2 {
     background: -ms-linear-gradient(top,  #91c80f 0%,#5d8b2c 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #91c80f 0%,#5d8b2c 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7caa0d', endColorstr='#5d8b2c',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
 }
 
 
@@ -451,7 +453,7 @@ h2 {
 .qa-nav-cat-link {
     outline: none;
     text-decoration: none;
-    color: #5a9570;
+    color: #0f793e;
 }
 .qa-nav-cat-selected,.qa-nav-cat-selected:hover {
     text-decoration:none;
@@ -1371,7 +1373,7 @@ h2 {
     font-weight:bold;
 }
 .qa-category-link {
-    color:#5a9570;
+    color:#0f793e;
     font-weight:bold;
 }
 .qa-tag-link {
