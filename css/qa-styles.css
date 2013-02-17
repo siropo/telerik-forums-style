@@ -20,6 +20,10 @@ body,td,input,textarea {
     font-size:12px;
     font-family:Verdana, Arial, Helvetica, sans-serif;
 }
+input[type="submit"] {
+    margin: 0;
+    padding: 0;
+}
 a:link,a:active,a:visited {
     text-decoration:none;
 }
@@ -297,7 +301,9 @@ h2 {
 }
 
 .qa-search-button {
-    padding: 3px 15px;
+    width: 70px;
+    line-height: 20px;
+    min-height: 20px;
     background: #7caa0d; /* Old browsers */
     background: -moz-linear-gradient(top,  #7caa0d 0%, #5d8b2c 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7caa0d), color-stop(100%,#5d8b2c)); /* Chrome,Safari4+ */
@@ -1472,6 +1478,22 @@ h2 {
     width: 65%;
 }
 
+.qa-a-item-main {
+    width: 100%;
+}
+
+.qa-form-tall-table {
+    width: 100%;
+}
+
+.qa-form-tall-data {
+    width: 100%;
+}
+
+.qa-form-tall-text {
+    width: 100%;
+}
+
  .qa-sidepanel {
     width: 25%;
 }
@@ -1775,6 +1797,11 @@ select {
     /*color:#da930e;
     */
 }
+
+.qa-c-item-content {
+    font-size: 13px;
+}
+
 .qa-c-item-buttons {
     position:relative;
     text-align:right;
