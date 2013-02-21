@@ -130,6 +130,10 @@ h2 {
     background-position: -213px 5px;
 }
 
+.small-text-forum {
+    font-size: 18px;
+}
+
 .qa-header a {
     color: #fff;
 }
@@ -1383,6 +1387,10 @@ h2 {
     color: #293d39;
     font-weight: bold;
     font-size: 11px;
+}
+
+.qa-top-users-label .qa-user-link {
+   color: #5a9570;
 }
 
 /* fix by kunev

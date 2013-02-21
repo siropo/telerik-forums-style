@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/qa-styles.css">
 		<link rel="alternate" type="application/rss+xml" href="./feed/qa.rss" title="Recent questions and answers">
+		
 		<script type="text/javascript"><!--
 		var qa_root='.\/';
 		var qa_request='';
@@ -1442,7 +1443,14 @@
 			</div> <!-- END qa-footer -->
 			
 		</div> <!-- END body-wrapper -->
-	
+		<script type="text/javascript">
+		(function() {
+			function init() {
+				document.getElementsByClassName("qa-logo-link")[0].innerHTML = 'Telerik Academy <span class="small-text-forum">Forums</span>';
+			}
+			window.addEventListener("load", init, false);
+		})();
+		</script>
 	<!-- Powered by Question2Answer - http://www.question2answer.org/ -->
 
 </body></html>
